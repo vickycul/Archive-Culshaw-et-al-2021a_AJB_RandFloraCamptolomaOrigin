@@ -1,17 +1,17 @@
 # Appendix-Culshaw-et-al-2021
-## 
-## Title: Rare and widespread: Integrating Bayesian MCMC approaches, Sanger sequencing and Hyb-Seq phylogenomics to reconstruct the origin of the enigmatic Rand Flora genus Camptoloma
-## 
-## V Culshaw (vickycul@hotmail.com)
-## Tamara Villaverde
-## M Mairal
-## S Olsson
-## I Sanmartin
-## 
-## American Journal of Botany
-## 
-## First published 2021
-##
+ 
+Title: Rare and widespread: Integrating Bayesian MCMC approaches, Sanger sequencing and Hyb-Seq phylogenomics to reconstruct the origin of the enigmatic Rand Flora genus Camptoloma
+
+V Culshaw (vickycul@hotmail.com)
+Tamara Villaverde
+M Mairal
+S Olsson
+I Sanmartin
+
+American Journal of Botany
+ 
+First published 2021
+
 
 Appendix 1. NEX file used for phylogenetic inference of the “all-sequences” dataset under a MCMC Bayesian framework in MrBayes v3.2.6, and jModelTest v2.1.10 results used to select the best-fit nucleotide substitution model.
 
