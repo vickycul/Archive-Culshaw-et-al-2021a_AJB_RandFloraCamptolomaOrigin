@@ -1,0 +1,116 @@
+## 
+## Title: Rare and widespread: Integrating Bayesian MCMC approaches, Sanger sequencing and Hyb-Seq phylogenomics to reconstruct the origin of the enigmatic Rand Flora genus Camptoloma
+## 
+## V Culshaw
+## Tamara Villaverde
+## M Mairal
+## S Olsson
+## I Sanmartin
+## 
+## American Journal of Botany
+## 
+## First published 2021
+##
+#
+# This script may be run from the command line by typing
+# rb REVBAYES_NotInAfricaNA_2017-10-24.rev
+#
+# This code was built using the tutorial:
+# «Introduction to Historical Biogeography, Phylogeographic analysis under the dispersal-extinction-cladogenesis process»,
+# written by Michael J. Landis and supplied in the RevBayes git hub.
+# https://revbayes.github.io/tutorials/biogeo/biogeo_intro.html
+
+setwd("/Users/vickycul/Documents/PhD/CamptolomaProject/Manuscript-Figures-Tables-Appendix/A1-RevBayesCode");
+
+range_fn = "RB-RANGE_NotInAfricaNA.nex";
+tree_fn = "DD_Chlor-ITS_05-07-2017_B1_2sp.tre";
+out_fn = "simple";
+
+dat_range_01 = readDiscreteCharacterData(range_fn);
+
+dat_range_n = formatDiscreteCharacterData(dat_range_01, "DEC");
+
+n_areas = dat_range_01.nchar();
+
+dat_range_01[1];
+
+dat_range_n[1];
+
+state_desc = dat_range_n.getStateDescriptions();
+
+
+state_desc_str = "state,range\n";
+for (i in 1:state_desc.size()){
+    state_desc_str += (i-1) + "," + state_desc[i] + "\n"
+}
+
+write(state_desc_str, file=out_fn+".state_labels.txt");
+
+tree <- readTrees(tree_fn)[1];
+
+log10_rate_bg ~ dnUniform(-4,2);
+log10_rate_bg.setValue(-2);
+moves[1] = mvSlide(log10_rate_bg, weight=4);
+
+rate_bg := 10^log10_rate_bg;
+
+dispersal_rate <- 1.0;
+
+for (i in 1:n_areas) {
+  for (j in 1:n_areas) {
+    dr[i][j] <- dispersal_rate
+  }
+}
+
+log_sd <- 0.5;
+log_mean <- ln(1) - 0.5*log_sd^2;
+extirpation_rate ~ dnLognormal(mean=log_mean, sd=log_sd);
+moves[2] = mvScale(extirpation_rate, weight=2);
+
+for (i in 1:n_areas) {
+  for (j in 1:n_areas) {
+    er[i][j] <- 0.0
+  }
+  er[i][i] := extirpation_rate
+}
+
+Q_DEC := fnDECRateMatrix(dispersalRates=dr, extirpationRates=er);
+
+clado_event_types <- [ "s", "a" ];
+clado_event_probs <- simplex(1, 1);
+P_DEC := fnDECCladoProbs(eventProbs=clado_event_probs,
+                         eventTypes=clado_event_types,
+                         numCharacters=n_areas);
+                         
+m_bg ~ dnPhyloCTMCClado(tree=tree,
+                        Q=Q_DEC,
+                        cladoProbs=P_DEC,
+                        branchRates=rate_bg,
+                        nSites=1,
+                        type="NaturalNumbers");
+
+m_bg.clamp(dat_range_n);
+
+monitors[1] = mnScreen(rate_bg, extirpation_rate, printgen=100);
+monitors[2] = mnModel(file=out_fn+".params.log", printgen=10);
+monitors[3] = mnFile(tree, file=out_fn+".tre", printgen=10);
+monitors[4] = mnJointConditionalAncestralState(tree=tree,
+                                               ctmc=m_bg,
+                                               filename=out_fn+".states.log",
+                                               type="NaturalNumbers",
+                                               printgen=10,
+                                               withTips=true,
+                                               withStartStates=true);
+
+mymodel = model(m_bg);
+
+mymcmc = mcmc(mymodel, moves, monitors);
+mymcmc.run(3440);
+
+# exit RevBayes
+q();
+
+### END.
+##
+#
+

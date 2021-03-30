@@ -1,0 +1,86 @@
+#NEXUS
+## 
+## Title: Rare and widespread: Integrating Bayesian MCMC approaches, Sanger sequencing and Hyb-Seq phylogenomics to reconstruct the origin of the enigmatic Rand Flora genus Camptoloma
+## 
+## V Culshaw
+## Tamara Villaverde
+## M Mairal
+## S Olsson
+## I Sanmartin
+## 
+## American Journal of Botany
+## 
+## First published 2021
+##
+#
+# This script may be run from the command line by typing
+# rb REVBAYES_NotInAfricaNA_2017-10-24.rev
+#
+# This code was built using the tutorial:
+# «Introduction to Historical Biogeography, Phylogeographic analysis under the dispersal-extinction-cladogenesis process»,
+# written by Michael J. Landis and supplied in the RevBayes git hub.
+# https://revbayes.github.io/tutorials/biogeo/biogeo_intro.html
+
+# GC  = Gran Canaria
+# NAm = Namibia
+# WSA = west South Africa
+# ESA = east South Africa
+# EA  = east Africa
+# OY  = Omen/Yemen
+# NA  = Not in Africa
+
+BEGIN DATA;
+	DIMENSIONS NTAX=45 NCHAR=7;
+
+	FORMAT datatype=Standard missing=? gap=- labels="01";
+	MATRIX
+											[1  2   3   4   5  6  7 ]
+											[GC NAm WSA ESA EA OY NA]
+		GenBank_Plantago					1111111
+		IS720_Limosella_aquatica			1111111
+		IS009_Camptoloma_canariensis		1000000
+		IS011_Camptoloma_canariensis		1000000
+		IS204_Camptoloma_lyperiiflorum		0000010
+		IS203_Camptoloma_lyperiiflorum		0000010
+		IS749_Camptoloma_rotundifolium		0100000
+		IS751_Camptoloma_rotundifolium		0100000
+		IS708_Jamesbrittenia_heucherifolia	0100000
+		IS713_Aptosimum_arenarium			0100000
+		IS712_Gomphostigma_virgatum			0111000
+		IS715_Gomphostigma_virgatum			0111000
+		IS703_Manulea_glandulosa			0011000
+		IS704_Lyperia_antirrhinoides		0010000
+		IS705_Lyperia_antirrhinoides		0010000
+		IS706_Sutera_foetida				0010000
+		IS707_Sutera_foetida				0010000
+		IS701_Manulea_pusilla				0011000
+		IS714_Peliostomum_virgatum_cf		0010000
+		K5747_Oftia_africana		        0010000
+		K27202_Oftia_africana				0010000
+		IS722_Zaluzianskya_violacea			0010000
+		IS718_Glumicalyx_lesuticus			0001000
+		IS728_Phygelius_aff_capensis		0001000
+		K33183_Phygelius_capensis			0001000
+		K12967_Phygelius_capensis			0001000
+		IS710_Dermatobotrys_saundersii		0011000
+		IS702_Manulea_crassifolia			0011000
+		K27324_Freylinia_undulata			0011000
+		K27540_Teedia_lucida				0011000
+		IS721_Pseudoselago_sp				0011000
+		IS719_Hebenstretia_dentata			0011100
+		IS725_Buddleja_salvifolia			0011100
+		IS723_Scrophularia_arguta			1111111
+		IS724_Verbascum_virgatum			0000001
+		K37994_Buddleja_colvilei			0000001
+		K11386_Buddleja_davidii				0000001
+		IS716_Capraria_biflora				0000001
+		IS717_Leucophyllum_texanum			0000001
+		IS709_Emorya_suaveolens				0000001
+		K44467_Buddleja_megalocephala		0000001
+		IS727_Buddleja_tucumanensis			0000001
+		IS699_Myoporum_sandwicense			0000001
+		IS700_Myoporum_tetrandrum			0000001
+		K28700_Buddleja_sp					0000001
+	;
+END;
+

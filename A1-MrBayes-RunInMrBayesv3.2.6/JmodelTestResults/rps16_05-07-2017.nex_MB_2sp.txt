@@ -1,0 +1,3171 @@
+## 
+## Title: Rare and widespread: Integrating Bayesian MCMC approaches, Sanger sequencing and Hyb-Seq phylogenomics to reconstruct the origin of the enigmatic Rand Flora genus Camptoloma
+## 
+## V Culshaw
+## Tamara Villaverde
+## M Mairal
+## S Olsson
+## I Sanmartin
+## 
+## American Journal of Botany
+## 
+## First published 2021
+##
+
+-------------------------- jModeltest 2.1.10 v20160303 --------------------------
+(c) 2011-onwards D. Darriba, G.L. Taboada, R. Doallo and D. Posada,
+(1) Department of Biochemistry, Genetics and Immunology
+    University of Vigo, 36310 Vigo, Spain.
+(2) Department of Electronics and Systems
+    University of A Coruna, 15071 A Coruna, Spain.
+e-mail: ddarriba@udc.es, dposada@uvigo.es
+--------------------------------------------------------------------------------
+ 
+Wed Jul 12 05:05:45 PDT 2017
+Linux 2.6.32-696.3.2.el6.x86_64, arch: amd64, bits: 64, numcores: 24
+ 
+--------------------------------------------------------------------------------
+Citation: Darriba D, Taboada GL, Doallo R and Posada D. 2012.
+          "jModelTest 2: more models, new heuristics and parallel computing".
+          Nature Methods 9(8), 772.
+--------------------------------------------------------------------------------
+ 
+jModelTest 2.1.10 v20160303
+Copyright (C) 2011 D. Darriba, G.L. Taboada, R. Doallo and D. Posada
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it under certain
+conditions
+ 
+Notice: This program may contain errors. Please inspect results carefully.
+ 
+ 
+Arguments = -tr 24 --set-property log-dir=./ -d infile.phy -o rps16_05-07-2017.nex_MB_2sp -n rps16_05-07-2017.nex_MB_2sp -s 11 -f -i -g 4 -t ML -AIC -AICc -BIC -DT -S BEST -p -a -w
+
+Reading data file "infile.phy"... OK.
+  number of sequences: 44
+  number of sites: 961
+ 
+ 
+---------------------------------------------------------------
+*                                                             *
+*        COMPUTATION OF LIKELIHOOD SCORES WITH PHYML          *
+*                                                             *
+---------------------------------------------------------------
+ 
+::Settings::
+ 
+ Phyml version = 20130103
+ Phyml binary = PhyML_3.0_linux64
+ Phyml path = /projects/ps-ngbt/opt/comet/jmodeltest2/2.1.10/exe/phyml/
+ Candidate models = 88
+   number of substitution schemes = 11
+   including models with equal/unequal base frequencies (+F)
+   including models with/without a proportion of invariable sites (+I)
+   including models with/without rate variation among sites (+G) (nCat = 4)
+ Optimized free parameters (K) = substitution parameters + 85 branch lengths + topology 
+ Base tree for likelihood calculations = ML tree
+ Tree topology search operation = BEST
+ 
+ 
+ 
+::Progress::
+ 
+Model 		 Exec. Time 	 Total Time 	 -lnL
+-------------------------------------------------------------------------
+F81+G		00h:00:48:05	00h:00:48:05	    4201.6007	 (1/88)
+HKY+G		00h:00:49:06	00h:00:49:06	    4161.1781	 (2/88)
+TrN+G		00h:00:48:08	00h:01:37:04	    4161.1775	 (3/88)
+TPM1uf+G	00h:00:49:07	00h:01:39:03	    4137.7121	 (4/88)
+TIM3+I+G	00h:01:48:08	00h:01:48:08	    4152.8903	 (5/88)
+TPM3uf+I+G	00h:01:49:01	00h:01:49:01	    4152.9264	 (6/88)
+K80+I+G		00h:01:52:00	00h:01:52:00	    4226.2951	 (7/88)
+TPM2uf+I+G	00h:01:54:05	00h:01:54:05	    4157.9063	 (8/88)
+TIM2+I+G	00h:01:57:04	00h:01:57:04	    4157.9018	 (9/88)
+TPM2+I+G	00h:01:58:06	00h:01:58:07	    4226.2474	 (10/88)
+TIM3ef+I+G	00h:02:01:06	00h:02:01:07	    4225.7043	 (11/88)
+TPM3+I+G	00h:02:01:07	00h:02:01:08	    4226.1914	 (12/88)
+TrNef+I+G	00h:02:01:08	00h:02:01:09	    4225.8277	 (13/88)
+TVM+I+G		00h:02:02:07	00h:02:02:07	    4133.1074	 (14/88)
+TPM1uf+I+G	00h:02:03:00	00h:02:03:00	    4137.5990	 (15/88)
+TIM1+I+G	00h:02:03:01	00h:02:03:01	    4137.5979	 (16/88)
+TIM2ef+I+G	00h:02:03:07	00h:02:03:08	    4225.7719	 (17/88)
+TrN+I+G		00h:02:04:08	00h:02:04:09	    4161.0342	 (18/88)
+F81+I+G		00h:02:06:04	00h:02:06:04	    4201.4417	 (19/88)
+GTR+I+G		00h:02:06:05	00h:02:06:05	    4133.0959	 (20/88)
+TVMef+I+G	00h:02:06:08	00h:02:06:08	    4210.3136	 (21/88)
+JC+I+G		00h:02:08:00	00h:02:08:00	    4261.3356	 (22/88)
+TIM1ef+I+G	00h:02:09:04	00h:02:09:04	    4210.2510	 (23/88)
+TPM1+I+G	00h:02:10:04	00h:02:10:04	    4210.6993	 (24/88)
+SYM+I+G		00h:02:11:06	00h:02:11:06	    4209.8541	 (25/88)
+HKY+I+G		00h:02:14:04	00h:02:14:04	    4161.0351	 (26/88)
+TPM2uf+G	00h:00:48:07	00h:02:26:01	    4158.0435	 (27/88)
+TPM3uf+G	00h:00:47:00	00h:02:26:03	    4153.0369	 (28/88)
+HKY+I		00h:00:20:08	00h:02:28:09	    4168.0104	 (29/88)
+F81+I		00h:00:23:00	00h:02:29:08	    4208.2262	 (30/88)
+TrN+I		00h:00:21:01	00h:02:30:05	    4168.0098	 (31/88)
+TPM1uf+I	00h:00:20:07	00h:02:31:01	    4145.1090	 (32/88)
+TPM2uf+I	00h:00:21:04	00h:02:33:00	    4165.3917	 (33/88)
+TPM3uf+I	00h:00:19:08	00h:02:34:02	    4159.8698	 (34/88)
+TIM2+G		00h:00:48:08	00h:02:37:09	    4158.0384	 (35/88)
+TIM1+G		00h:00:49:04	00h:02:38:01	    4137.7113	 (36/88)
+TIM3+G		00h:00:49:01	00h:02:41:01	    4153.0021	 (37/88)
+TVM+G		00h:00:48:02	00h:02:42:07	    4133.2098	 (38/88)
+TIM1+I		00h:00:20:03	00h:02:46:04	    4145.1086	 (39/88)
+TIM2+I		00h:00:21:02	00h:02:47:05	    4165.3860	 (40/88)
+GTR+G		00h:00:51:03	00h:02:48:07	    4133.1996	 (41/88)
+JC+I		00h:00:17:07	00h:02:48:08	    4268.5618	 (42/88)
+TIM3+I		00h:00:21:04	00h:02:50:03	    4159.9977	 (43/88)
+K80+G		00h:00:49:00	00h:02:50:07	    4226.5137	 (44/88)
+JC+G		00h:00:52:04	00h:02:51:01	    4261.5386	 (45/88)
+TPM1+G		00h:00:50:03	00h:02:52:01	    4210.9248	 (46/88)
+TPM2+G		00h:00:49:08	00h:02:52:05	    4226.4669	 (47/88)
+TrNef+G		00h:00:51:09	00h:02:53:06	    4226.0400	 (48/88)
+K80+I		00h:00:21:00	00h:02:54:00	    4233.6432	 (49/88)
+TVM+I		00h:00:24:03	00h:02:54:02	    4140.9032	 (50/88)
+TIM2ef+G	00h:00:50:06	00h:02:54:03	    4225.9855	 (51/88)
+TIM1ef+G	00h:00:51:03	00h:02:54:04	    4210.4697	 (52/88)
+TPM3+G		00h:00:52:04	00h:02:55:04	    4226.4014	 (53/88)
+GTR+I		00h:00:25:00	00h:02:55:05	    4140.9032	 (54/88)
+TrNef+I		00h:00:21:07	00h:02:55:09	    4233.0450	 (55/88)
+TIM3ef+G	00h:00:51:09	00h:02:56:07	    4225.9094	 (56/88)
+SYM+G		00h:00:51:08	00h:02:58:03	    4210.0777	 (57/88)
+TVMef+G		00h:00:52:09	00h:02:59:03	    4210.5439	 (58/88)
+TPM2+I		00h:00:21:05	00h:02:59:06	    4233.5916	 (59/88)
+TPM3+I		00h:00:21:05	00h:03:02:06	    4233.4413	 (60/88)
+TPM1+I		00h:00:25:03	00h:03:03:02	    4218.2817	 (61/88)
+TIM1ef+I	00h:00:22:03	00h:03:05:00	    4217.7005	 (62/88)
+F81		00h:00:15:04	00h:03:05:08	    4257.5798	 (63/88)
+TIM2ef+I	00h:00:21:00	00h:03:07:05	    4232.9843	 (64/88)
+HKY		00h:00:18:00	00h:03:08:07	    4215.1916	 (65/88)
+TPM2uf		00h:00:16:04	00h:03:08:09	    4211.7434	 (66/88)
+TPM1uf		00h:00:17:06	00h:03:09:07	    4190.3109	 (67/88)
+TIM3ef+I	00h:00:22:04	00h:03:09:09	    4232.8136	 (68/88)
+TrN		00h:00:18:09	00h:03:09:09	    4215.1910	 (69/88)
+SYM+I		00h:00:21:07	00h:03:10:04	    4217.3190	 (70/88)
+TVMef+I		00h:00:22:01	00h:03:10:08	    4217.9218	 (71/88)
+TIM2		00h:00:16:07	00h:03:10:09	    4211.7431	 (72/88)
+TPM3uf		00h:00:17:04	00h:03:11:03	    4203.9986	 (73/88)
+TIM3		00h:00:17:00	00h:03:11:04	    4203.9906	 (74/88)
+TIM1		00h:00:17:04	00h:03:11:04	    4190.3089	 (75/88)
+JC		00h:00:17:05	00h:03:13:00	    4322.4274	 (76/88)
+K80		00h:00:17:04	00h:03:13:03	    4288.2816	 (77/88)
+TVM		00h:00:19:06	00h:03:14:00	    4184.5857	 (78/88)
+TrNef		00h:00:17:07	00h:03:14:04	    4287.6153	 (79/88)
+GTR		00h:00:20:06	00h:03:15:09	    4184.5796	 (80/88)
+TPM1		00h:00:18:04	00h:03:16:07	    4273.1680	 (81/88)
+TPM2		00h:00:18:01	00h:03:17:04	    4288.1971	 (82/88)
+TPM3		00h:00:18:02	00h:03:17:09	    4286.9576	 (83/88)
+TIM1ef		00h:00:18:05	00h:03:21:01	    4272.5191	 (84/88)
+TIM2ef		00h:00:18:03	00h:03:21:05	    4287.5281	 (85/88)
+TIM3ef		00h:00:18:06	00h:03:23:06	    4286.2924	 (86/88)
+TVMef		00h:00:18:08	00h:03:24:06	    4272.8614	 (87/88)
+SYM		00h:00:18:03	00h:03:25:08	    4272.2147	 (88/88)
+ 
+   Model = JC
+   partition = 000000
+   -lnL = 4322.4274
+   K = 86 
+ 
+   Model = JC+I
+   partition = 000000
+   -lnL = 4268.5618
+   K = 87
+   p-inv = 0.4850 
+ 
+   Model = JC+G
+   partition = 000000
+   -lnL = 4261.5386
+   K = 87
+   gamma shape = 0.5630 
+ 
+   Model = JC+I+G
+   partition = 000000
+   -lnL = 4261.3356
+   K = 88
+   p-inv = 0.1530
+   gamma shape = 0.8260 
+ 
+   Model = F81
+   partition = 000000
+   -lnL = 4257.5798
+   K = 89
+   freqA = 0.3395 
+   freqC = 0.1615 
+   freqG = 0.1947 
+   freqT = 0.3043  
+ 
+   Model = F81+I
+   partition = 000000
+   -lnL = 4208.2262
+   K = 90
+   freqA = 0.3384 
+   freqC = 0.1637 
+   freqG = 0.1970 
+   freqT = 0.3009 
+   p-inv = 0.4720 
+ 
+   Model = F81+G
+   partition = 000000
+   -lnL = 4201.6007
+   K = 90
+   freqA = 0.3390 
+   freqC = 0.1639 
+   freqG = 0.1972 
+   freqT = 0.2999 
+   gamma shape = 0.5980 
+ 
+   Model = F81+I+G
+   partition = 000000
+   -lnL = 4201.4417
+   K = 91
+   freqA = 0.3390 
+   freqC = 0.1639 
+   freqG = 0.1972 
+   freqT = 0.2998 
+   p-inv = 0.1470
+   gamma shape = 0.8710 
+ 
+   Model = K80
+   partition = 010010
+   -lnL = 4288.2816
+   K = 87
+   kappa = 2.1568 (ti/tv = 1.0784) 
+ 
+   Model = K80+I
+   partition = 010010
+   -lnL = 4233.6432
+   K = 88
+   kappa = 2.1993 (ti/tv = 1.0997)
+   p-inv = 0.4870 
+ 
+   Model = K80+G
+   partition = 010010
+   -lnL = 4226.5137
+   K = 88
+   kappa = 2.2082 (ti/tv = 1.1041)
+   gamma shape = 0.5580 
+ 
+   Model = K80+I+G
+   partition = 010010
+   -lnL = 4226.2951
+   K = 89
+   kappa = 2.2093 (ti/tv = 1.1046)
+   p-inv = 0.1650
+   gamma shape = 0.8480 
+ 
+   Model = HKY
+   partition = 010010
+   -lnL = 4215.1916
+   K = 90
+   freqA = 0.3414 
+   freqC = 0.1583 
+   freqG = 0.1875 
+   freqT = 0.3128 
+   kappa = 2.3696 (ti/tv = 1.0796) 
+ 
+   Model = HKY+I
+   partition = 010010
+   -lnL = 4168.0104
+   K = 91
+   freqA = 0.3393 
+   freqC = 0.1618 
+   freqG = 0.1902 
+   freqT = 0.3088 
+   kappa = 2.3492 (ti/tv = 1.0795)
+   p-inv = 0.4630 
+ 
+   Model = HKY+G
+   partition = 010010
+   -lnL = 4161.1781
+   K = 91
+   freqA = 0.3401 
+   freqC = 0.1621 
+   freqG = 0.1897 
+   freqT = 0.3081 
+   kappa = 2.3617 (ti/tv = 1.0851)
+   gamma shape = 0.6200 
+ 
+   Model = HKY+I+G
+   partition = 010010
+   -lnL = 4161.0351
+   K = 92
+   freqA = 0.3401 
+   freqC = 0.1621 
+   freqG = 0.1897 
+   freqT = 0.3081 
+   kappa = 2.3619 (ti/tv = 1.0852)
+   p-inv = 0.1320
+   gamma shape = 0.8670 
+ 
+   Model = TrNef
+   partition = 010020
+   -lnL = 4287.6153
+   K = 88
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  2.3049
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  1.9872
+   R(f) [GT] =  1.0000 
+ 
+   Model = TrNef+I
+   partition = 010020
+   -lnL = 4233.0450
+   K = 89
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  2.3565
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  2.0194
+   R(f) [GT] =  1.0000
+   p-inv = 0.4870 
+ 
+   Model = TrNef+G
+   partition = 010020
+   -lnL = 4226.0400
+   K = 89
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  2.3519
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  2.0404
+   R(f) [GT] =  1.0000
+   gamma shape = 0.5590 
+ 
+   Model = TrNef+I+G
+   partition = 010020
+   -lnL = 4225.8277
+   K = 90
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  2.3518
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  2.0426
+   R(f) [GT] =  1.0000
+   p-inv = 0.1660
+   gamma shape = 0.8520 
+ 
+   Model = TrN
+   partition = 010020
+   -lnL = 4215.1910
+   K = 91
+   freqA = 0.3415 
+   freqC = 0.1582 
+   freqG = 0.1876 
+   freqT = 0.3127 
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  2.3647
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  2.3762
+   R(f) [GT] =  1.0000 
+ 
+   Model = TrN+I
+   partition = 010020
+   -lnL = 4168.0098
+   K = 92
+   freqA = 0.3391 
+   freqC = 0.1619 
+   freqG = 0.1901 
+   freqT = 0.3089 
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  2.3565
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  2.3399
+   R(f) [GT] =  1.0000
+   p-inv = 0.4630 
+ 
+   Model = TrN+G
+   partition = 010020
+   -lnL = 4161.1775
+   K = 92
+   freqA = 0.3403 
+   freqC = 0.1620 
+   freqG = 0.1898 
+   freqT = 0.3080 
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  2.3553
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  2.3697
+   R(f) [GT] =  1.0000
+   gamma shape = 0.6190 
+ 
+   Model = TrN+I+G
+   partition = 010020
+   -lnL = 4161.0342
+   K = 93
+   freqA = 0.3403 
+   freqC = 0.1620 
+   freqG = 0.1898 
+   freqT = 0.3079 
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  2.3542
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  2.3718
+   R(f) [GT] =  1.0000
+   p-inv = 0.1310
+   gamma shape = 0.8650 
+ 
+   Model = TPM1
+   partition = 012210
+   -lnL = 4273.1680
+   K = 88
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  1.5813
+   R(c) [AT] =  0.4623
+   R(d) [CG] =  0.4623
+   R(e) [CT] =  1.5813
+   R(f) [GT] =  1.0000 
+ 
+   Model = TPM1+I
+   partition = 012210
+   -lnL = 4218.2817
+   K = 89
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  1.5989
+   R(c) [AT] =  0.4466
+   R(d) [CG] =  0.4466
+   R(e) [CT] =  1.5989
+   R(f) [GT] =  1.0000
+   p-inv = 0.4880 
+ 
+   Model = TPM1+G
+   partition = 012210
+   -lnL = 4210.9248
+   K = 89
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  1.6003
+   R(c) [AT] =  0.4422
+   R(d) [CG] =  0.4422
+   R(e) [CT] =  1.6003
+   R(f) [GT] =  1.0000
+   gamma shape = 0.5540 
+ 
+   Model = TPM1+I+G
+   partition = 012210
+   -lnL = 4210.6992
+   K = 90
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  1.6007
+   R(c) [AT] =  0.4417
+   R(d) [CG] =  0.4417
+   R(e) [CT] =  1.6007
+   R(f) [GT] =  1.0000
+   p-inv = 0.1570
+   gamma shape = 0.8190 
+ 
+   Model = TPM1uf
+   partition = 012210
+   -lnL = 4190.3109
+   K = 91
+   freqA = 0.3472 
+   freqC = 0.1535 
+   freqG = 0.1818 
+   freqT = 0.3175 
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  1.5636
+   R(c) [AT] =  0.3699
+   R(d) [CG] =  0.3699
+   R(e) [CT] =  1.5636
+   R(f) [GT] =  1.0000 
+ 
+   Model = TPM1uf+I
+   partition = 012210
+   -lnL = 4145.1090
+   K = 92
+   freqA = 0.3449 
+   freqC = 0.1565 
+   freqG = 0.1846 
+   freqT = 0.3141 
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  1.5746
+   R(c) [AT] =  0.3706
+   R(d) [CG] =  0.3706
+   R(e) [CT] =  1.5746
+   R(f) [GT] =  1.0000
+   p-inv = 0.4510 
+ 
+   Model = TPM1uf+G
+   partition = 012210
+   -lnL = 4137.7121
+   K = 92
+   freqA = 0.3460 
+   freqC = 0.1562 
+   freqG = 0.1835 
+   freqT = 0.3143 
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  1.5770
+   R(c) [AT] =  0.3616
+   R(d) [CG] =  0.3616
+   R(e) [CT] =  1.5770
+   R(f) [GT] =  1.0000
+   gamma shape = 0.6400 
+ 
+   Model = TPM1uf+I+G
+   partition = 012210
+   -lnL = 4137.5990
+   K = 93
+   freqA = 0.3460 
+   freqC = 0.1563 
+   freqG = 0.1836 
+   freqT = 0.3142 
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  1.5779
+   R(c) [AT] =  0.3617
+   R(d) [CG] =  0.3617
+   R(e) [CT] =  1.5779
+   R(f) [GT] =  1.0000
+   p-inv = 0.1130
+   gamma shape = 0.8480 
+ 
+   Model = TPM2
+   partition = 010212
+   -lnL = 4288.1971
+   K = 88
+   R(a) [AC] =  0.9463
+   R(b) [AG] =  2.0899
+   R(c) [AT] =  0.9463
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  2.0899
+   R(f) [GT] =  1.0000 
+ 
+   Model = TPM2+I
+   partition = 010212
+   -lnL = 4233.5916
+   K = 89
+   R(a) [AC] =  1.0461
+   R(b) [AG] =  2.2556
+   R(c) [AT] =  1.0461
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  2.2556
+   R(f) [GT] =  1.0000
+   p-inv = 0.4880 
+ 
+   Model = TPM2+G
+   partition = 010212
+   -lnL = 4226.4669
+   K = 89
+   R(a) [AC] =  1.0449
+   R(b) [AG] =  2.2630
+   R(c) [AT] =  1.0449
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  2.2630
+   R(f) [GT] =  1.0000
+   gamma shape = 0.5560 
+ 
+   Model = TPM2+I+G
+   partition = 010212
+   -lnL = 4226.2474
+   K = 90
+   R(a) [AC] =  1.0465
+   R(b) [AG] =  2.2664
+   R(c) [AT] =  1.0465
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  2.2664
+   R(f) [GT] =  1.0000
+   p-inv = 0.1690
+   gamma shape = 0.8550 
+ 
+   Model = TPM2uf
+   partition = 010212
+   -lnL = 4211.7434
+   K = 91
+   freqA = 0.3484 
+   freqC = 0.1581 
+   freqG = 0.1810 
+   freqT = 0.3125 
+   R(a) [AC] =  0.6909
+   R(b) [AG] =  1.9005
+   R(c) [AT] =  0.6909
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  1.9005
+   R(f) [GT] =  1.0000 
+ 
+   Model = TPM2uf+I
+   partition = 010212
+   -lnL = 4165.3917
+   K = 92
+   freqA = 0.3471 
+   freqC = 0.1614 
+   freqG = 0.1833 
+   freqT = 0.3083 
+   R(a) [AC] =  0.7076
+   R(b) [AG] =  1.9227
+   R(c) [AT] =  0.7076
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  1.9227
+   R(f) [GT] =  1.0000
+   p-inv = 0.4560 
+ 
+   Model = TPM2uf+G
+   partition = 010212
+   -lnL = 4158.0435
+   K = 92
+   freqA = 0.3493 
+   freqC = 0.1616 
+   freqG = 0.1816 
+   freqT = 0.3075 
+   R(a) [AC] =  0.6789
+   R(b) [AG] =  1.8895
+   R(c) [AT] =  0.6789
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  1.8895
+   R(f) [GT] =  1.0000
+   gamma shape = 0.6290 
+ 
+   Model = TPM2uf+I+G
+   partition = 010212
+   -lnL = 4157.9063
+   K = 93
+   freqA = 0.3494 
+   freqC = 0.1616 
+   freqG = 0.1816 
+   freqT = 0.3074 
+   R(a) [AC] =  0.6788
+   R(b) [AG] =  1.8891
+   R(c) [AT] =  0.6788
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  1.8891
+   R(f) [GT] =  1.0000
+   p-inv = 0.1340
+   gamma shape = 0.8860 
+ 
+   Model = TPM3
+   partition = 012012
+   -lnL = 4286.9576
+   K = 88
+   R(a) [AC] =  1.2431
+   R(b) [AG] =  2.3787
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.2431
+   R(e) [CT] =  2.3787
+   R(f) [GT] =  1.0000 
+ 
+   Model = TPM3+I
+   partition = 012012
+   -lnL = 4233.4413
+   K = 89
+   R(a) [AC] =  1.0937
+   R(b) [AG] =  2.2935
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.0937
+   R(e) [CT] =  2.2935
+   R(f) [GT] =  1.0000
+   p-inv = 0.4850 
+ 
+   Model = TPM3+G
+   partition = 012012
+   -lnL = 4226.4014
+   K = 89
+   R(a) [AC] =  1.0703
+   R(b) [AG] =  2.2792
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.0703
+   R(e) [CT] =  2.2792
+   R(f) [GT] =  1.0000
+   gamma shape = 0.5620 
+ 
+   Model = TPM3+I+G
+   partition = 012012
+   -lnL = 4226.1914
+   K = 90
+   R(a) [AC] =  1.0682
+   R(b) [AG] =  2.2784
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.0682
+   R(e) [CT] =  2.2784
+   R(f) [GT] =  1.0000
+   p-inv = 0.1560
+   gamma shape = 0.8350 
+ 
+   Model = TPM3uf
+   partition = 012012
+   -lnL = 4203.9986
+   K = 91
+   freqA = 0.3411 
+   freqC = 0.1463 
+   freqG = 0.1857 
+   freqT = 0.3269 
+   R(a) [AC] =  1.9775
+   R(b) [AG] =  3.1448
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.9775
+   R(e) [CT] =  3.1448
+   R(f) [GT] =  1.0000 
+ 
+   Model = TPM3uf+I
+   partition = 012012
+   -lnL = 4159.8697
+   K = 92
+   freqA = 0.3387 
+   freqC = 0.1493 
+   freqG = 0.1879 
+   freqT = 0.3242 
+   R(a) [AC] =  1.8809
+   R(b) [AG] =  3.0955
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.8809
+   R(e) [CT] =  3.0955
+   R(f) [GT] =  1.0000
+   p-inv = 0.4450 
+ 
+   Model = TPM3uf+G
+   partition = 012012
+   -lnL = 4153.0369
+   K = 92
+   freqA = 0.3387 
+   freqC = 0.1490 
+   freqG = 0.1884 
+   freqT = 0.3239 
+   R(a) [AC] =  1.8810
+   R(b) [AG] =  3.1129
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.8810
+   R(e) [CT] =  3.1129
+   R(f) [GT] =  1.0000
+   gamma shape = 0.6560 
+ 
+   Model = TPM3uf+I+G
+   partition = 012012
+   -lnL = 4152.9264
+   K = 93
+   freqA = 0.3387 
+   freqC = 0.1490 
+   freqG = 0.1885 
+   freqT = 0.3239 
+   R(a) [AC] =  1.8794
+   R(b) [AG] =  3.1122
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.8794
+   R(e) [CT] =  3.1122
+   R(f) [GT] =  1.0000
+   p-inv = 0.1260
+   gamma shape = 0.9080 
+ 
+   Model = TIM1ef
+   partition = 012230
+   -lnL = 4272.5191
+   K = 89
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  1.6885
+   R(c) [AT] =  0.4625
+   R(d) [CG] =  0.4625
+   R(e) [CT] =  1.4589
+   R(f) [GT] =  1.0000 
+ 
+   Model = TIM1ef+I
+   partition = 012230
+   -lnL = 4217.7005
+   K = 90
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  1.7120
+   R(c) [AT] =  0.4477
+   R(d) [CG] =  0.4477
+   R(e) [CT] =  1.4701
+   R(f) [GT] =  1.0000
+   p-inv = 0.4880 
+ 
+   Model = TIM1ef+G
+   partition = 012230
+   -lnL = 4210.4697
+   K = 90
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  1.7025
+   R(c) [AT] =  0.4424
+   R(d) [CG] =  0.4424
+   R(e) [CT] =  1.4809
+   R(f) [GT] =  1.0000
+   gamma shape = 0.5560 
+ 
+   Model = TIM1ef+I+G
+   partition = 012230
+   -lnL = 4210.2510
+   K = 91
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  1.7026
+   R(c) [AT] =  0.4421
+   R(d) [CG] =  0.4421
+   R(e) [CT] =  1.4828
+   R(f) [GT] =  1.0000
+   p-inv = 0.1690
+   gamma shape = 0.8520 
+ 
+   Model = TIM1
+   partition = 012230
+   -lnL = 4190.3089
+   K = 92
+   freqA = 0.3474 
+   freqC = 0.1533 
+   freqG = 0.1820 
+   freqT = 0.3173 
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  1.5573
+   R(c) [AT] =  0.3700
+   R(d) [CG] =  0.3700
+   R(e) [CT] =  1.5721
+   R(f) [GT] =  1.0000 
+ 
+   Model = TIM1+I
+   partition = 012230
+   -lnL = 4145.1086
+   K = 93
+   freqA = 0.3448 
+   freqC = 0.1566 
+   freqG = 0.1845 
+   freqT = 0.3142 
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  1.5787
+   R(c) [AT] =  0.3707
+   R(d) [CG] =  0.3707
+   R(e) [CT] =  1.5719
+   R(f) [GT] =  1.0000
+   p-inv = 0.4510 
+ 
+   Model = TIM1+G
+   partition = 012230
+   -lnL = 4137.7113
+   K = 93
+   freqA = 0.3461 
+   freqC = 0.1561 
+   freqG = 0.1837 
+   freqT = 0.3141 
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  1.5724
+   R(c) [AT] =  0.3616
+   R(d) [CG] =  0.3616
+   R(e) [CT] =  1.5836
+   R(f) [GT] =  1.0000
+   gamma shape = 0.6400 
+ 
+   Model = TIM1+I+G
+   partition = 012230
+   -lnL = 4137.5979
+   K = 94
+   freqA = 0.3461 
+   freqC = 0.1562 
+   freqG = 0.1837 
+   freqT = 0.3140 
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  1.5725
+   R(c) [AT] =  0.3618
+   R(d) [CG] =  0.3618
+   R(e) [CT] =  1.5852
+   R(f) [GT] =  1.0000
+   p-inv = 0.1130
+   gamma shape = 0.8480 
+ 
+   Model = TIM2ef
+   partition = 010232
+   -lnL = 4287.5281
+   K = 89
+   R(a) [AC] =  0.9455
+   R(b) [AG] =  2.2327
+   R(c) [AT] =  0.9455
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  1.9243
+   R(f) [GT] =  1.0000 
+ 
+   Model = TIM2ef+I
+   partition = 010232
+   -lnL = 4232.9843
+   K = 90
+   R(a) [AC] =  1.0508
+   R(b) [AG] =  2.4247
+   R(c) [AT] =  1.0508
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  2.0748
+   R(f) [GT] =  1.0000
+   p-inv = 0.4870 
+ 
+   Model = TIM2ef+G
+   partition = 010232
+   -lnL = 4225.9855
+   K = 90
+   R(a) [AC] =  1.0490
+   R(b) [AG] =  2.4170
+   R(c) [AT] =  1.0490
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  2.0942
+   R(f) [GT] =  1.0000
+   gamma shape = 0.5570 
+ 
+   Model = TIM2ef+I+G
+   partition = 010232
+   -lnL = 4225.7719
+   K = 91
+   R(a) [AC] =  1.0498
+   R(b) [AG] =  2.4183
+   R(c) [AT] =  1.0498
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  2.0970
+   R(f) [GT] =  1.0000
+   p-inv = 0.1660
+   gamma shape = 0.8490 
+ 
+   Model = TIM2
+   partition = 010232
+   -lnL = 4211.7431
+   K = 92
+   freqA = 0.3483 
+   freqC = 0.1582 
+   freqG = 0.1810 
+   freqT = 0.3125 
+   R(a) [AC] =  0.6908
+   R(b) [AG] =  1.9031
+   R(c) [AT] =  0.6908
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  1.8972
+   R(f) [GT] =  1.0000 
+ 
+   Model = TIM2+I
+   partition = 010232
+   -lnL = 4165.3859
+   K = 93
+   freqA = 0.3467 
+   freqC = 0.1617 
+   freqG = 0.1830 
+   freqT = 0.3087 
+   R(a) [AC] =  0.7076
+   R(b) [AG] =  1.9378
+   R(c) [AT] =  0.7076
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  1.9052
+   R(f) [GT] =  1.0000
+   p-inv = 0.4560 
+ 
+   Model = TIM2+G
+   partition = 010232
+   -lnL = 4158.0384
+   K = 93
+   freqA = 0.3490 
+   freqC = 0.1619 
+   freqG = 0.1812 
+   freqT = 0.3079 
+   R(a) [AC] =  0.6778
+   R(b) [AG] =  1.9020
+   R(c) [AT] =  0.6778
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  1.8705
+   R(f) [GT] =  1.0000
+   gamma shape = 0.6300 
+ 
+   Model = TIM2+I+G
+   partition = 010232
+   -lnL = 4157.9018
+   K = 94
+   freqA = 0.3490 
+   freqC = 0.1619 
+   freqG = 0.1813 
+   freqT = 0.3078 
+   R(a) [AC] =  0.6784
+   R(b) [AG] =  1.9021
+   R(c) [AT] =  0.6784
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  1.8729
+   R(f) [GT] =  1.0000
+   p-inv = 0.1340
+   gamma shape = 0.8860 
+ 
+   Model = TIM3ef
+   partition = 012032
+   -lnL = 4286.2924
+   K = 89
+   R(a) [AC] =  1.2421
+   R(b) [AG] =  2.5412
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.2421
+   R(e) [CT] =  2.1910
+   R(f) [GT] =  1.0000 
+ 
+   Model = TIM3ef+I
+   partition = 012032
+   -lnL = 4232.8136
+   K = 90
+   R(a) [AC] =  1.1005
+   R(b) [AG] =  2.4689
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.1005
+   R(e) [CT] =  2.1073
+   R(f) [GT] =  1.0000
+   p-inv = 0.4850 
+ 
+   Model = TIM3ef+G
+   partition = 012032
+   -lnL = 4225.9093
+   K = 90
+   R(a) [AC] =  1.0760
+   R(b) [AG] =  2.4364
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.0760
+   R(e) [CT] =  2.1082
+   R(f) [GT] =  1.0000
+   gamma shape = 0.5640 
+ 
+   Model = TIM3ef+I+G
+   partition = 012032
+   -lnL = 4225.7043
+   K = 91
+   R(a) [AC] =  1.0744
+   R(b) [AG] =  2.4357
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.0744
+   R(e) [CT] =  2.1093
+   R(f) [GT] =  1.0000
+   p-inv = 0.1580
+   gamma shape = 0.8390 
+ 
+   Model = TIM3
+   partition = 012032
+   -lnL = 4203.9906
+   K = 92
+   freqA = 0.3415 
+   freqC = 0.1460 
+   freqG = 0.1861 
+   freqT = 0.3265 
+   R(a) [AC] =  1.9783
+   R(b) [AG] =  3.1201
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.9783
+   R(e) [CT] =  3.1777
+   R(f) [GT] =  1.0000 
+ 
+   Model = TIM3+I
+   partition = 012032
+   -lnL = 4159.9977
+   K = 93
+   freqA = 0.3386 
+   freqC = 0.1492 
+   freqG = 0.1880 
+   freqT = 0.3242 
+   R(a) [AC] =  1.8811
+   R(b) [AG] =  3.1029
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.8811
+   R(e) [CT] =  3.0984
+   R(f) [GT] =  1.0000
+   p-inv = 0.4460 
+ 
+   Model = TIM3+G
+   partition = 012032
+   -lnL = 4153.0021
+   K = 93
+   freqA = 0.3396 
+   freqC = 0.1482 
+   freqG = 0.1892 
+   freqT = 0.3230 
+   R(a) [AC] =  1.8869
+   R(b) [AG] =  3.0564
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.8869
+   R(e) [CT] =  3.1932
+   R(f) [GT] =  1.0000
+   gamma shape = 0.6550 
+ 
+   Model = TIM3+I+G
+   partition = 012032
+   -lnL = 4152.8903
+   K = 94
+   freqA = 0.3396 
+   freqC = 0.1482 
+   freqG = 0.1893 
+   freqT = 0.3229 
+   R(a) [AC] =  1.8859
+   R(b) [AG] =  3.0546
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.8859
+   R(e) [CT] =  3.1935
+   R(f) [GT] =  1.0000
+   p-inv = 0.1250
+   gamma shape = 0.9040 
+ 
+   Model = TVMef
+   partition = 012314
+   -lnL = 4272.8614
+   K = 90
+   R(a) [AC] =  1.1221
+   R(b) [AG] =  1.6782
+   R(c) [AT] =  0.4774
+   R(d) [CG] =  0.5160
+   R(e) [CT] =  1.6782
+   R(f) [GT] =  1.0000 
+ 
+   Model = TVMef+I
+   partition = 012314
+   -lnL = 4217.9218
+   K = 91
+   R(a) [AC] =  1.0902
+   R(b) [AG] =  1.6721
+   R(c) [AT] =  0.5018
+   R(d) [CG] =  0.4179
+   R(e) [CT] =  1.6721
+   R(f) [GT] =  1.0000
+   p-inv = 0.4890 
+ 
+   Model = TVMef+G
+   partition = 012314
+   -lnL = 4210.5439
+   K = 91
+   R(a) [AC] =  1.0629
+   R(b) [AG] =  1.6521
+   R(c) [AT] =  0.4960
+   R(d) [CG] =  0.4001
+   R(e) [CT] =  1.6521
+   R(f) [GT] =  1.0000
+   gamma shape = 0.5490 
+ 
+   Model = TVMef+I+G
+   partition = 012314
+   -lnL = 4210.3136
+   K = 92
+   R(a) [AC] =  1.0613
+   R(b) [AG] =  1.6513
+   R(c) [AT] =  0.4959
+   R(d) [CG] =  0.3983
+   R(e) [CT] =  1.6513
+   R(f) [GT] =  1.0000
+   p-inv = 0.1690
+   gamma shape = 0.8400 
+ 
+   Model = TVM
+   partition = 012314
+   -lnL = 4184.5857
+   K = 93
+   freqA = 0.3474 
+   freqC = 0.1467 
+   freqG = 0.1807 
+   freqT = 0.3252 
+   R(a) [AC] =  1.2748
+   R(b) [AG] =  1.7679
+   R(c) [AT] =  0.3305
+   R(d) [CG] =  0.7564
+   R(e) [CT] =  1.7679
+   R(f) [GT] =  1.0000 
+ 
+   Model = TVM+I
+   partition = 012314
+   -lnL = 4140.9032
+   K = 94
+   freqA = 0.3459 
+   freqC = 0.1494 
+   freqG = 0.1824 
+   freqT = 0.3224 
+   R(a) [AC] =  1.2358
+   R(b) [AG] =  1.7554
+   R(c) [AT] =  0.3265
+   R(d) [CG] =  0.7023
+   R(e) [CT] =  1.7554
+   R(f) [GT] =  1.0000
+   p-inv = 0.4390 
+ 
+   Model = TVM+G
+   partition = 012314
+   -lnL = 4133.2098
+   K = 94
+   freqA = 0.3478 
+   freqC = 0.1487 
+   freqG = 0.1804 
+   freqT = 0.3231 
+   R(a) [AC] =  1.2107
+   R(b) [AG] =  1.7396
+   R(c) [AT] =  0.3074
+   R(d) [CG] =  0.7091
+   R(e) [CT] =  1.7396
+   R(f) [GT] =  1.0000
+   gamma shape = 0.6600 
+ 
+   Model = TVM+I+G
+   partition = 012314
+   -lnL = 4133.1074
+   K = 95
+   freqA = 0.3478 
+   freqC = 0.1487 
+   freqG = 0.1805 
+   freqT = 0.3230 
+   R(a) [AC] =  1.2104
+   R(b) [AG] =  1.7394
+   R(c) [AT] =  0.3074
+   R(d) [CG] =  0.7087
+   R(e) [CT] =  1.7394
+   R(f) [GT] =  1.0000
+   p-inv = 0.1160
+   gamma shape = 0.8890 
+ 
+   Model = SYM
+   partition = 012345
+   -lnL = 4272.2147
+   K = 91
+   R(a) [AC] =  1.1211
+   R(b) [AG] =  1.7906
+   R(c) [AT] =  0.4773
+   R(d) [CG] =  0.5163
+   R(e) [CT] =  1.5472
+   R(f) [GT] =  1.0000 
+ 
+   Model = SYM+I
+   partition = 012345
+   -lnL = 4217.3189
+   K = 92
+   R(a) [AC] =  1.1014
+   R(b) [AG] =  1.8023
+   R(c) [AT] =  0.5040
+   R(d) [CG] =  0.4216
+   R(e) [CT] =  1.5427
+   R(f) [GT] =  1.0000
+   p-inv = 0.4890 
+ 
+   Model = SYM+G
+   partition = 012345
+   -lnL = 4210.0777
+   K = 92
+   R(a) [AC] =  1.0724
+   R(b) [AG] =  1.7676
+   R(c) [AT] =  0.4982
+   R(d) [CG] =  0.4028
+   R(e) [CT] =  1.5346
+   R(f) [GT] =  1.0000
+   gamma shape = 0.5500 
+ 
+   Model = SYM+I+G
+   partition = 012345
+   -lnL = 4209.8541
+   K = 93
+   R(a) [AC] =  1.0705
+   R(b) [AG] =  1.7657
+   R(c) [AT] =  0.4981
+   R(d) [CG] =  0.4014
+   R(e) [CT] =  1.5346
+   R(f) [GT] =  1.0000
+   p-inv = 0.1680
+   gamma shape = 0.8410 
+ 
+   Model = GTR
+   partition = 012345
+   -lnL = 4184.5796
+   K = 94
+   freqA = 0.3478 
+   freqC = 0.1464 
+   freqG = 0.1810 
+   freqT = 0.3249 
+   R(a) [AC] =  1.2753
+   R(b) [AG] =  1.7556
+   R(c) [AT] =  0.3304
+   R(d) [CG] =  0.7560
+   R(e) [CT] =  1.7837
+   R(f) [GT] =  1.0000 
+ 
+   Model = GTR+I
+   partition = 012345
+   -lnL = 4140.9032
+   K = 95
+   freqA = 0.3459 
+   freqC = 0.1494 
+   freqG = 0.1824 
+   freqT = 0.3224 
+   R(a) [AC] =  1.2368
+   R(b) [AG] =  1.7557
+   R(c) [AT] =  0.3268
+   R(d) [CG] =  0.7030
+   R(e) [CT] =  1.7572
+   R(f) [GT] =  1.0000
+   p-inv = 0.4390 
+ 
+   Model = GTR+G
+   partition = 012345
+   -lnL = 4133.1996
+   K = 95
+   freqA = 0.3483 
+   freqC = 0.1482 
+   freqG = 0.1809 
+   freqT = 0.3226 
+   R(a) [AC] =  1.2150
+   R(b) [AG] =  1.7245
+   R(c) [AT] =  0.3079
+   R(d) [CG] =  0.7101
+   R(e) [CT] =  1.7660
+   R(f) [GT] =  1.0000
+   gamma shape = 0.6600 
+ 
+   Model = GTR+I+G
+   partition = 012345
+   -lnL = 4133.0959
+   K = 96
+   freqA = 0.3483 
+   freqC = 0.1482 
+   freqG = 0.1810 
+   freqT = 0.3225 
+   R(a) [AC] =  1.2152
+   R(b) [AG] =  1.7235
+   R(c) [AT] =  0.3079
+   R(d) [CG] =  0.7105
+   R(e) [CT] =  1.7669
+   R(f) [GT] =  1.0000
+   p-inv = 0.1050
+   gamma shape = 0.8590 
+ 
+  Best-fit models should be reoptimized for comparison with unconstrained likelihood
+ 
+Computation of likelihood scores completed. It took 00h:03:25:08.
+ 
+
+
+
+---------------------------------------------------------------
+*                                                             *
+*             AKAIKE INFORMATION CRITERION (AIC)              *
+*                                                             *
+---------------------------------------------------------------
+ 
+ Model selected: 
+   Model = TVM+G
+   partition = 012314
+   -lnL = 4133.2098
+   K = 94
+   freqA = 0.3478 
+   freqC = 0.1487 
+   freqG = 0.1804 
+   freqT = 0.3231 
+   R(a) [AC] =  1.2107
+   R(b) [AG] =  1.7396
+   R(c) [AT] =  0.3074
+   R(d) [CG] =  0.7091
+   R(e) [CT] =  1.7396
+   R(f) [GT] =  1.0000
+   gamma shape = 0.6600 
+
+--
+PAUP* Commands Block:
+ If you want to load the selected model and associated estimates in PAUP*,
+ attach the next block of commands after the data in your PAUP file:
+
+[!
+Likelihood settings from best-fit model (TVM+G) selected by AIC
+with jModeltest 2.1.10 v20160303 on Wed Jul 12 05:09:11 PDT 2017]
+
+BEGIN PAUP;
+Lset base=(0.3478 0.1487 0.1804 ) nst=6  rmat=(1.2107 1.7396 0.3074 0.7091 1.7396) rates=gamma shape=0.6600 ncat=4 pinvar=0;
+END;
+--
+ 
+Tree for the best AIC model = (IS702_Manulea_crassifolia:0.00476879,IS703_Manulea_glandulosa:0.00273995,(IS701_Manulea_pusilla:0.00746785,(IS707_Sutera_foetida:0.03441377,((IS718_Glumicalyx_lesuticus:0.00997266,(IS722_Zaluzianskya_violacea:0.04338872,IS721_Pseudoselago_sp:0.01909932):0.00108467):0.03861556,((IS704_Lyperia_antirrhinoides:0.00000001,IS705_Lyperia_antirrhinoides:0.00000001):0.03084615,((IS708_Jamesbrittenia_heucherifolia:0.02388319,(IS724_Verbascum_virgatum:0.01929370,IS720_Limosella_aquatica:0.06650244):0.00268806):0.00000007,(IS723_Scrophularia_arguta:0.01241410,((IS728_Phygelius_aff_capensis:0.00000008,(K12967_Phygelius_capensis:0.00000001,K33183_Phygelius_capensis:0.00000001):0.00122396):0.00858983,(K27324_Freylinia_undulata:0.00615861,((K27540_Teedia_lucida:0.00244485,(K27202_Oftia_africana:0.00000001,K5747_Oftia_africana:0.00122469):0.00000001):0.00864807,((IS710_Dermatobotrys_saundersii:0.00625852,((IS749_Camptoloma_rotundifolium_1:0.00121451,IS751_Camptoloma_rotundifolium_3:0.00123128):0.00244870,((IS203_Camptoloma_lyperiiflorum_5:0.00000001,IS204_Camptoloma_lyperiiflorum_1:0.00000001):0.00244738,(IS009_Camptoloma_canariensis_1:0.00000001,IS011_Camptoloma_canariensis_2:0.00000001):0.00122249):0.00000008):0.00368069):0.00000008,(((K28700_Buddleja_sp:3.85558185,(IS709_Emorya_suaveolens:1.04593254,(IS713_Aptosimum_arenarium:0.00575194,(IS706_Sutera_foetida:3.85056171,(IS714_Peliostomum_virgatum_cf:0.00000052,IS719_Hebenstretia_dentata:0.02973806):0.00010432):0.01451585):0.00078457):0.00713734):0.00758247,(IS717_Leucophyllum_texanum:0.00486788,(IS716_Capraria_biflora:0.01525637,(IS699_Myoporum_sandwicense:0.00366706,IS700_Myoporum_tetrandrum:0.00120774):0.01372749):0.02455948):0.00765951):0.01367345,((IS725_Buddleja_salvifolia:0.00000009,(IS727_Buddleja_tucumanensis:0.00123604,K44467_Buddleja_megalocephala:0.00379654):0.00507674):0.00125253,(K11386_Buddleja_davidii:0.00126220,(K37994_Buddleja_colvilei:0.00125561,(IS712_Gomphostigma_virgatum:0.00250081,IS715_Gomphostigma_virgatum:0.00512411):0.01275289):0.00124273):0.00000007):0.00625256):0.00000007):0.00125332):0.00125504):0.00000006):0.00275728):0.00123194):0.00990523):0.01882200):0.00706640):0.03610244):0.00287777);
+ 
+ 
+* AIC MODEL SELECTION : Selection uncertainty
+ 
+Model             -lnL    K      AIC       delta       weight   cumWeight
+------------------------------------------------------------------------- 
+TVM+G       4133.20981   94  8454.419620   0.000000    0.478521   0.478521 
+TVM+I+G     4133.10736   95  8456.214720   1.795100    0.195029   0.673550 
+GTR+G       4133.19963   95  8456.399260   1.979640    0.177839   0.851389 
+GTR+I+G     4133.09591   96  8458.191820   3.772200    0.072573   0.923962 
+TPM1uf+G    4137.71210   92  8459.424200   5.004580    0.039190   0.963152 
+TPM1uf+I+G  4137.59899   93  8461.197980   6.778360    0.016144   0.979295 
+TIM1+G      4137.71131   93  8461.422620   7.003000    0.014428   0.993724 
+TIM1+I+G    4137.59794   94  8463.195880   8.776260    0.005945   0.999669 
+TVM+I       4140.90322   94  8469.806440  15.386820    0.000218   0.999887 
+GTR+I       4140.90324   95  8471.806480  17.386860   8.02e-005   0.999967 
+TPM1uf+I    4145.10898   92  8474.217960  19.798340   2.40e-005   0.999991 
+TIM1+I      4145.10860   93  8476.217200  21.797580   8.84e-006   1.000000 
+TPM3uf+G    4153.03686   92  8490.073720  35.654100   8.66e-009   1.000000 
+TPM3uf+I+G  4152.92642   93  8491.852840  37.433220   3.56e-009   1.000000 
+TIM3+G      4153.00209   93  8492.004180  37.584560   3.30e-009   1.000000 
+TIM3+I+G    4152.89029   94  8493.780580  39.360960   1.36e-009   1.000000 
+TPM2uf+G    4158.04351   92  8500.087020  45.667400   5.80e-011   1.000000 
+TPM2uf+I+G  4157.90631   93  8501.812620  47.393000   2.45e-011   1.000000 
+TIM2+G      4158.03840   93  8502.076800  47.657180   2.14e-011   1.000000 
+TPM3uf+I    4159.86975   92  8503.739500  49.319880   9.34e-012   1.000000 
+TIM2+I+G    4157.90177   94  8503.803540  49.383920   9.04e-012   1.000000 
+HKY+G       4161.17809   91  8504.356180  49.936560   6.86e-012   1.000000 
+TIM3+I      4159.99768   93  8505.995360  51.575740   3.02e-012   1.000000 
+HKY+I+G     4161.03509   92  8506.070180  51.650560   2.91e-012   1.000000 
+TrN+G       4161.17745   92  8506.354900  51.935280   2.53e-012   1.000000 
+TrN+I+G     4161.03416   93  8508.068320  53.648700   1.07e-012   1.000000 
+TPM2uf+I    4165.39173   92  8514.783460  60.363840   3.73e-014   1.000000 
+TIM2+I      4165.38595   93  8516.771900  62.352280   1.38e-014   1.000000 
+HKY+I       4168.01037   91  8518.020740  63.601120   7.40e-015   1.000000 
+TrN+I       4168.00980   92  8520.019600  65.599980   2.72e-015   1.000000 
+TVM         4184.58569   93  8555.171380  100.751760   6.34e-023   1.000000 
+GTR         4184.57960   94  8557.159200  102.739580   2.35e-023   1.000000 
+TPM1uf      4190.31086   91  8562.621720  108.202100   1.53e-024   1.000000 
+TIM1        4190.30885   92  8564.617700  110.198080   5.63e-025   1.000000 
+F81+G       4201.60070   90  8583.201400  128.781780   5.19e-029   1.000000 
+F81+I+G     4201.44173   91  8584.883460  130.463840   2.24e-029   1.000000 
+TPM3uf      4203.99855   91  8589.997100  135.577480   1.74e-030   1.000000 
+TIM3        4203.99061   92  8591.981220  137.561600   6.44e-031   1.000000 
+F81+I       4208.22616   90  8596.452320  142.032700   6.88e-032   1.000000 
+TPM1+G      4210.92477   89  8599.849540  145.429920   1.26e-032   1.000000 
+TIM1ef+G    4210.46967   90  8600.939340  146.519720   7.30e-033   1.000000 
+TPM1+I+G    4210.69925   90  8601.398500  146.978880   5.81e-033   1.000000 
+TIM1ef+I+G  4210.25104   91  8602.502080  148.082460   3.34e-033   1.000000 
+TVMef+G     4210.54389   91  8603.087780  148.668160   2.49e-033   1.000000 
+SYM+G       4210.07771   92  8604.155420  149.735800   1.46e-033   1.000000 
+TVMef+I+G   4210.31357   92  8604.627140  150.207520   1.16e-033   1.000000 
+TPM2uf      4211.74338   91  8605.486760  151.067140   7.52e-034   1.000000 
+SYM+I+G     4209.85412   93  8605.708240  151.288620   6.73e-034   1.000000 
+TIM2        4211.74310   92  8607.486200  153.066580   2.77e-034   1.000000 
+HKY         4215.19156   90  8610.383120  155.963500   6.50e-035   1.000000 
+TrN         4215.19103   91  8612.382060  157.962440   2.39e-035   1.000000 
+TPM1+I      4218.28168   89  8614.563360  160.143740   8.04e-036   1.000000 
+TIM1ef+I    4217.70045   90  8615.400900  160.981280   5.29e-036   1.000000 
+TVMef+I     4217.92178   91  8617.843560  163.423940   1.56e-036   1.000000 
+SYM+I       4217.31895   92  8618.637900  164.218280   1.05e-036   1.000000 
+K80+G       4226.51369   88  8629.027380  174.607760   5.81e-039   1.000000 
+TrNef+G     4226.04000   89  8630.080000  175.660380   3.43e-039   1.000000 
+K80+I+G     4226.29508   89  8630.590160  176.170540   2.66e-039   1.000000 
+TPM3+G      4226.40139   89  8630.802780  176.383160   2.39e-039   1.000000 
+TPM2+G      4226.46688   89  8630.933760  176.514140   2.24e-039   1.000000 
+TrNef+I+G   4225.82768   90  8631.655360  177.235740   1.56e-039   1.000000 
+TIM3ef+G    4225.90935   90  8631.818700  177.399080   1.44e-039   1.000000 
+TIM2ef+G    4225.98552   90  8631.971040  177.551420   1.33e-039   1.000000 
+TPM3+I+G    4226.19143   90  8632.382860  177.963240   1.09e-039   1.000000 
+TPM2+I+G    4226.24737   90  8632.494740  178.075120   1.03e-039   1.000000 
+TIM3ef+I+G  4225.70428   91  8633.408560  178.988940   6.50e-040   1.000000 
+TIM2ef+I+G  4225.77191   91  8633.543820  179.124200   6.08e-040   1.000000 
+K80+I       4233.64318   88  8643.286360  188.866740   4.66e-042   1.000000 
+TrNef+I     4233.04503   89  8644.090060  189.670440   3.12e-042   1.000000 
+TPM3+I      4233.44129   89  8644.882580  190.462960   2.10e-042   1.000000 
+TPM2+I      4233.59164   89  8645.183280  190.763660   1.80e-042   1.000000 
+TIM3ef+I    4232.81357   90  8645.627140  191.207520   1.44e-042   1.000000 
+TIM2ef+I    4232.98425   90  8645.968500  191.548880   1.22e-042   1.000000 
+F81         4257.57983   89  8693.159660  238.740040   6.89e-053   1.000000 
+JC+G        4261.53860   87  8697.077200  242.657580   9.72e-054   1.000000 
+JC+I+G      4261.33556   88  8698.671120  244.251500   4.38e-054   1.000000 
+JC+I        4268.56178   87  8711.123560  256.703940   8.66e-057   1.000000 
+TPM1        4273.16803   88  8722.336060  267.916440   3.18e-059   1.000000 
+TIM1ef      4272.51906   89  8723.038120  268.618500   2.24e-059   1.000000 
+TVMef       4272.86136   90  8725.722720  271.303100   5.85e-060   1.000000 
+SYM         4272.21472   91  8726.429440  272.009820   4.11e-060   1.000000 
+TPM3        4286.95757   88  8749.915140  295.495520   3.26e-065   1.000000 
+K80         4288.28161   87  8750.563220  296.143600   2.36e-065   1.000000 
+TIM3ef      4286.29240   89  8750.584800  296.165180   2.34e-065   1.000000 
+TrNef       4287.61528   88  8751.230560  296.810940   1.69e-065   1.000000 
+TPM2        4288.19707   88  8752.394140  297.974520   9.45e-066   1.000000 
+TIM2ef      4287.52814   89  8753.056280  298.636660   6.79e-066   1.000000 
+JC          4322.42740   86  8816.854800  362.435180   9.51e-080   1.000000
+-------------------------------------------------------------------------
+-lnL:	negative log likelihod
+ K:	number of estimated parameters
+ AIC:	Akaike Information Criterion
+ delta:	AIC difference
+ weight:	AIC weight
+ cumWeight:	cumulative AIC weight
+ 
+ 
+* AIC MODEL SELECTION : Confidence interval
+ 
+There are 88 models in the 100% confidence interval: [ TVM+G TVM+I+G GTR+G GTR+I+G TPM1uf+G TPM1uf+I+G TIM1+G TIM1+I+G TVM+I GTR+I TPM1uf+I TIM1+I TPM3uf+G TPM3uf+I+G TIM3+G TIM3+I+G TPM2uf+G TPM2uf+I+G TIM2+G TPM3uf+I TIM2+I+G HKY+G TIM3+I HKY+I+G TrN+G TrN+I+G TPM2uf+I TIM2+I HKY+I TrN+I TVM GTR TPM1uf TIM1 F81+G F81+I+G TPM3uf TIM3 F81+I TPM1+G TIM1ef+G TPM1+I+G TIM1ef+I+G TVMef+G SYM+G TVMef+I+G TPM2uf SYM+I+G TIM2 HKY TrN TPM1+I TIM1ef+I TVMef+I SYM+I K80+G TrNef+G K80+I+G TPM3+G TPM2+G TrNef+I+G TIM3ef+G TIM2ef+G TPM3+I+G TPM2+I+G TIM3ef+I+G TIM2ef+I+G K80+I TrNef+I TPM3+I TPM2+I TIM3ef+I TIM2ef+I F81 JC+G JC+I+G JC+I TPM1 TIM1ef TVMef SYM TPM3 K80 TIM3ef TrNef TPM2 TIM2ef JC ] 
+ 
+ 
+* AIC MODEL SELECTION : Parameter importance
+ 
+Parameter   Importance
+----------------------
+fA	    1.0000
+fC	    1.0000
+fG	    1.0000
+fT	    1.0000
+kappa	    0.0000
+titv	    0.0000
+rAC	    0.9243
+rAG	    1.0000
+rAT	    1.0000
+rCG	    1.0000
+rCT	    1.0000
+rGT	    1.0000
+pinv(I)	    0.0003
+alpha(G)	    0.7100
+pinv(IG)	    0.2897
+alpha(IG)	    0.2897
+----------------------
+Values have been rounded.
+ (I):  considers only +I models.
+ (G):  considers only +G models.
+ (IG): considers only +I+G models.
+ 
+ 
+* AIC MODEL SELECTION : Best Model's command line
+ 
+phyml  -i /tmp/jmodeltest5580669905982529847.phy -d nt -n 1 -b 0 --run_id TVM+G -m 012314 -f m -c 4 -a e --no_memory_check -o tlr -s BEST
+ 
+ 
+ 
+---------------------------------------------------------------
+*                                                             *
+*                    MODEL AVERAGED PHYLOGENY                 *
+*                                                             *
+---------------------------------------------------------------
+ 
+Selection criterion: . . . . AIC
+Confidence interval: . . . . 1.00
+Consensus type:. . . . . . . 50% majority rule
+ 
+ 
+Using 88 models in the 1.00 confidence interval = TVM+G TVM+I+G GTR+G GTR+I+G TPM1uf+G TPM1uf+I+G TIM1+G TIM1+I+G TVM+I GTR+I TPM1uf+I TIM1+I TPM3uf+G TPM3uf+I+G TIM3+G TIM3+I+G TPM2uf+G TPM2uf+I+G TIM2+G TPM3uf+I TIM2+I+G HKY+G TIM3+I HKY+I+G TrN+G TrN+I+G TPM2uf+I TIM2+I HKY+I TrN+I TVM GTR TPM1uf TIM1 F81+G F81+I+G TPM3uf TIM3 F81+I TPM1+G TIM1ef+G TPM1+I+G TIM1ef+I+G TVMef+G SYM+G TVMef+I+G TPM2uf SYM+I+G TIM2 HKY TrN TPM1+I TIM1ef+I TVMef+I SYM+I K80+G TrNef+G K80+I+G TPM3+G TPM2+G TrNef+I+G TIM3ef+G TIM2ef+G TPM3+I+G TPM2+I+G TIM3ef+I+G TIM2ef+I+G K80+I TrNef+I TPM3+I TPM2+I TIM3ef+I TIM2ef+I F81 JC+G JC+I+G JC+I TPM1 TIM1ef TVMef SYM TPM3 K80 TIM3ef TrNef TPM2 TIM2ef JC  
+ 
+Species in order:
+ 
+    1. IS702_Manulea_crassifolia
+    2. IS703_Manulea_glandulosa
+    3. IS701_Manulea_pusilla
+    4. IS707_Sutera_foetida
+    5. IS718_Glumicalyx_lesuticus
+    6. IS722_Zaluzianskya_violacea
+    7. IS721_Pseudoselago_sp
+    8. IS704_Lyperia_antirrhinoides
+    9. IS705_Lyperia_antirrhinoides
+    10. IS708_Jamesbrittenia_heucherifolia
+    11. IS724_Verbascum_virgatum
+    12. IS720_Limosella_aquatica
+    13. IS723_Scrophularia_arguta
+    14. IS728_Phygelius_aff_capensis
+    15. K12967_Phygelius_capensis
+    16. K33183_Phygelius_capensis
+    17. K27324_Freylinia_undulata
+    18. K27540_Teedia_lucida
+    19. K27202_Oftia_africana
+    20. K5747_Oftia_africana
+    21. IS710_Dermatobotrys_saundersii
+    22. IS749_Camptoloma_rotundifolium_1
+    23. IS751_Camptoloma_rotundifolium_3
+    24. IS203_Camptoloma_lyperiiflorum_5
+    25. IS204_Camptoloma_lyperiiflorum_1
+    26. IS009_Camptoloma_canariensis_1
+    27. IS011_Camptoloma_canariensis_2
+    28. K28700_Buddleja_sp
+    29. IS709_Emorya_suaveolens
+    30. IS713_Aptosimum_arenarium
+    31. IS706_Sutera_foetida
+    32. IS714_Peliostomum_virgatum_cf
+    33. IS719_Hebenstretia_dentata
+    34. IS717_Leucophyllum_texanum
+    35. IS716_Capraria_biflora
+    36. IS699_Myoporum_sandwicense
+    37. IS700_Myoporum_tetrandrum
+    38. IS725_Buddleja_salvifolia
+    39. IS727_Buddleja_tucumanensis
+    40. K44467_Buddleja_megalocephala
+    41. K11386_Buddleja_davidii
+    42. K37994_Buddleja_colvilei
+    43. IS712_Gomphostigma_virgatum
+    44. IS715_Gomphostigma_virgatum
+ 
+Bipartitions included in the consensus tree
+ 
+    12345678911111111112222222222333333333344444
+             01234567890123456789012345678901234
+    ******************************************** ( 1.0 )
+    --****************************************** ( 0.70998 )
+    ---***************************************** ( 0.70998 )
+    ----**************************************** ( 0.69555 )
+    ----***------------------------------------- ( 0.71028 )
+    -----**------------------------------------- ( 0.72613 )
+    -------************************************* ( 0.69555 )
+    -------**----------------------------------- ( 1.0 )
+    ---------*********************************** ( 0.69555 )
+    ---------***-------------------------------- ( 0.70998 )
+    ----------**-------------------------------- ( 1.0 )
+    ------------******************************** ( 0.69555 )
+    -------------******************************* ( 0.69555 )
+    -------------***---------------------------- ( 1.0 )
+    --------------**---------------------------- ( 1.0 )
+    ----------------**************************** ( 0.69555 )
+    -----------------*************************** ( 0.69555 )
+    -----------------***------------------------ ( 1.0 )
+    ------------------**------------------------ ( 0.99971 )
+    --------------------************************ ( 0.69555 )
+    --------------------*******----------------- ( 0.71028 )
+    ---------------------******----------------- ( 1.0 )
+    ---------------------**--------------------- ( 1.0 )
+    -----------------------****----------------- ( 0.71002 )
+    -----------------------**------------------- ( 1.0 )
+    -------------------------**----------------- ( 1.0 )
+    ---------------------------***************** ( 0.69555 )
+    ---------------------------**********------- ( 0.69555 )
+    ---------------------------******----------- ( 0.69555 )
+    ------------------------------***----------- ( 0.65636 )
+    -------------------------------**----------- ( 1.0 )
+    ---------------------------------****------- ( 1.0 )
+    ----------------------------------***------- ( 1.0 )
+    -----------------------------------**------- ( 1.0 )
+    -------------------------------------******* ( 1.0 )
+    -------------------------------------***---- ( 1.0 )
+    --------------------------------------**---- ( 1.0 )
+    ----------------------------------------**** ( 0.70998 )
+    -----------------------------------------*** ( 1.0 )
+    ------------------------------------------** ( 1.0 )
+
+ 
+                                             +-44 IS719_Hebenstretia_dentata
+                                          +-69
+                                          |  +-43 IS714_Peliostomum_virgatum_cf
+                                       +-70
+                                       |  +----------------------42 IS706_Sutera_foetida
+                                       |
+                                       +-41 IS713_Aptosimum_arenarium
+                                    +-71
+                                    |  +-------------------40 IS709_Emorya_suaveolens
+                                    |  |
+                                    |  +----------------------39 K28700_Buddleja_sp
+                                 +-72
+                                 |  |        +-38 IS700_Myoporum_tetrandrum
+                                 |  |     +-66
+                                 |  |     |  +-37 IS699_Myoporum_sandwicense
+                                 |  |  +-67
+                                 |  |  |  +-36 IS716_Capraria_biflora
+                                 |  +-68
+                                 |     +-35 IS717_Leucophyllum_texanum
+                              +-73
+                              |  |           +-34 IS715_Gomphostigma_virgatum
+                              |  |        +-62
+                              |  |        |  +-33 IS712_Gomphostigma_virgatum
+                              |  |     +-63
+                              |  |     |  +-32 K37994_Buddleja_colvilei
+                              |  |  +-64
+                              |  |  |  +-31 K11386_Buddleja_davidii
+                              |  +-65
+                              |     |     +-30 K44467_Buddleja_megalocephala
+                              |     |  +-60
+                              |     |  |  +-29 IS727_Buddleja_tucumanensis
+                              |     +-61
+                              |        +-28 IS725_Buddleja_salvifolia
+                           +-74
+                           |  |           +-27 IS011_Camptoloma_canariensis_2
+                           |  |        +-56
+                           |  |        |  +-26 IS009_Camptoloma_canariensis_1
+                           |  |     +-57
+                           |  |     |  |  +-25 IS204_Camptoloma_lyperiiflorum_1
+                           |  |     |  +-55
+                           |  |     |     +-24 IS203_Camptoloma_lyperiiflorum_5
+                           |  |  +-58
+                           |  |  |  |  +-23 IS751_Camptoloma_rotundifolium_3
+                           |  |  |  +-54
+                           |  |  |     +-22 IS749_Camptoloma_rotundifolium_1
+                           |  +-59
+                           |     +-21 IS710_Dermatobotrys_saundersii
+                        +-75
+                        |  |     +-20 K5747_Oftia_africana
+                        |  |  +-52
+                        |  |  |  +-19 K27202_Oftia_africana
+                        |  +-53
+                        |     +-18 K27540_Teedia_lucida
+                     +-76
+                     |  +-17 K27324_Freylinia_undulata
+                  +-77
+                  |  |     +-16 K33183_Phygelius_capensis
+                  |  |  +-50
+                  |  |  |  +-15 K12967_Phygelius_capensis
+                  |  +-51
+                  |     +-14 IS728_Phygelius_aff_capensis
+               +-78
+               |  +-13 IS723_Scrophularia_arguta
+            +-79
+            |  |     +-12 IS720_Limosella_aquatica
+            |  |  +-48
+            |  |  |  +-11 IS724_Verbascum_virgatum
+            |  +-49
+            |     +-10 IS708_Jamesbrittenia_heucherifolia
+         +-80
+         |  |  +--9 IS705_Lyperia_antirrhinoides
+         |  +-47
+         |     +--8 IS704_Lyperia_antirrhinoides
+      +-81
+      |  |     +--7 IS721_Pseudoselago_sp
+      |  |  +-45
+      |  |  |  +--6 IS722_Zaluzianskya_violacea
+      |  +-46
+      |     +--5 IS718_Glumicalyx_lesuticus
+   +-82
+   |  +--4 IS707_Sutera_foetida
++-83
+|  +--3 IS701_Manulea_pusilla
+|
++--2 IS703_Manulea_glandulosa
+|
++--1 IS702_Manulea_crassifolia
+
+ 
+(IS702_Manulea_crassifolia:0.0047687900,IS703_Manulea_glandulosa:0.0027399500,(IS701_Manulea_pusilla:0.0074678500,(IS707_Sutera_foetida:0.0344137700,((IS718_Glumicalyx_lesuticus:0.0099726600,(IS722_Zaluzianskya_violacea:0.0433887200,IS721_Pseudoselago_sp:0.0190993200):0.7261:0.0010846700):0.7103:0.0386155600,((IS704_Lyperia_antirrhinoides:0.0000000100,IS705_Lyperia_antirrhinoides:0.0000000100):1.0000:0.0308460700,((IS708_Jamesbrittenia_heucherifolia:0.0238831900,(IS724_Verbascum_virgatum:0.0193063000,IS720_Limosella_aquatica:0.0665024400):1.0000:0.0026880600):0.7100:0.0000000700,(IS723_Scrophularia_arguta:0.0124141000,((IS728_Phygelius_aff_capensis:0.0000000800,(K12967_Phygelius_capensis:0.0000000100,K33183_Phygelius_capensis:0.0000000100):1.0000:0.0012239600):1.0000:0.0085898300,(K27324_Freylinia_undulata:0.0061586100,((K27540_Teedia_lucida:0.0024448500,(K27202_Oftia_africana:0.0000000100,K5747_Oftia_africana:0.0012246900):0.9997:0.0000000100):1.0000:0.0086480700,((IS710_Dermatobotrys_saundersii:0.0062585200,((IS749_Camptoloma_rotundifolium_1:0.0012145100,IS751_Camptoloma_rotundifolium_3:0.0012312800):1.0000:0.0024487000,((IS203_Camptoloma_lyperiiflorum_5:0.0000000100,IS204_Camptoloma_lyperiiflorum_1:0.0000000100):1.0000:0.0024473800,(IS009_Camptoloma_canariensis_1:0.0000000100,IS011_Camptoloma_canariensis_2:0.0000000100):1.0000:0.0012224900):0.7100:0.0000000800):1.0000:0.0036806900):0.7103:0.0000000800,(((IS725_Buddleja_salvifolia:0.0000000900,(IS727_Buddleja_tucumanensis:0.0012360400,K44467_Buddleja_megalocephala:0.0037965400):1.0000:0.0050767400):1.0000:0.0012525300,(K11386_Buddleja_davidii:0.0012622000,(K37994_Buddleja_colvilei:0.0012556100,(IS712_Gomphostigma_virgatum:0.0025008100,IS715_Gomphostigma_virgatum:0.0051241100):1.0000:0.0127528900):1.0000:0.0012427300):0.7100:0.0000000700):1.0000:0.0062525600,((IS717_Leucophyllum_texanum:0.0048678800,(IS716_Capraria_biflora:0.0152563700,(IS699_Myoporum_sandwicense:0.0036670600,IS700_Myoporum_tetrandrum:0.0012077400):1.0000:0.0137274900):1.0000:0.0245594800):1.0000:0.0076595100,(K28700_Buddleja_sp:3.8555818500,IS709_Emorya_suaveolens:3.4412584900,IS713_Aptosimum_arenarium:0.0057519400,(IS706_Sutera_foetida:3.8505617100,(IS714_Peliostomum_virgatum_cf:0.0000005200,IS719_Hebenstretia_dentata:0.0297380600):1.0000:0.0001048700):0.6564:0.0145158500):0.6955:0.0075824700):0.6955:0.0136734500):0.6955:0.0000000700):0.6955:0.0012533200):0.6955:0.0012550400):0.6955:0.0000000600):0.6955:0.0027572800):0.6955:0.0012319400):0.6955:0.0099052300):0.6955:0.0188220000):0.6955:0.0070664000):0.7100:0.0361024400):0.7100:0.0028777700);
+ 
+Note: this tree is unrooted. Branch lengths are the expected number of substitutions per site. Labels next to parentheses represent phylogenetic uncertainty due to model selection (see documentation)
+
+
+
+---------------------------------------------------------------
+*                                                             *
+*        CORRECTED AKAIKE INFORMATION CRITERION (AICc)        *
+*                                                             *
+---------------------------------------------------------------
+ 
+ Sample size: 961.0
+ 
+ Model selected: 
+   Model = TVM+G
+   partition = 012314
+   -lnL = 4133.2098
+   K = 94
+   freqA = 0.3478 
+   freqC = 0.1487 
+   freqG = 0.1804 
+   freqT = 0.3231 
+   R(a) [AC] =  1.2107
+   R(b) [AG] =  1.7396
+   R(c) [AT] =  0.3074
+   R(d) [CG] =  0.7091
+   R(e) [CT] =  1.7396
+   R(f) [GT] =  1.0000
+   gamma shape = 0.6600 
+
+--
+PAUP* Commands Block:
+ If you want to load the selected model and associated estimates in PAUP*,
+ attach the next block of commands after the data in your PAUP file:
+
+[!
+Likelihood settings from best-fit model (TVM+G) selected by AICc
+with jModeltest 2.1.10 v20160303 on Wed Jul 12 05:09:11 PDT 2017]
+
+BEGIN PAUP;
+Lset base=(0.3478 0.1487 0.1804 ) nst=6  rmat=(1.2107 1.7396 0.3074 0.7091 1.7396) rates=gamma shape=0.6600 ncat=4 pinvar=0;
+END;
+--
+ 
+Tree for the best AICc model = (IS702_Manulea_crassifolia:0.00476879,IS703_Manulea_glandulosa:0.00273995,(IS701_Manulea_pusilla:0.00746785,(IS707_Sutera_foetida:0.03441377,((IS718_Glumicalyx_lesuticus:0.00997266,(IS722_Zaluzianskya_violacea:0.04338872,IS721_Pseudoselago_sp:0.01909932):0.00108467):0.03861556,((IS704_Lyperia_antirrhinoides:0.00000001,IS705_Lyperia_antirrhinoides:0.00000001):0.03084615,((IS708_Jamesbrittenia_heucherifolia:0.02388319,(IS724_Verbascum_virgatum:0.01929370,IS720_Limosella_aquatica:0.06650244):0.00268806):0.00000007,(IS723_Scrophularia_arguta:0.01241410,((IS728_Phygelius_aff_capensis:0.00000008,(K12967_Phygelius_capensis:0.00000001,K33183_Phygelius_capensis:0.00000001):0.00122396):0.00858983,(K27324_Freylinia_undulata:0.00615861,((K27540_Teedia_lucida:0.00244485,(K27202_Oftia_africana:0.00000001,K5747_Oftia_africana:0.00122469):0.00000001):0.00864807,((IS710_Dermatobotrys_saundersii:0.00625852,((IS749_Camptoloma_rotundifolium_1:0.00121451,IS751_Camptoloma_rotundifolium_3:0.00123128):0.00244870,((IS203_Camptoloma_lyperiiflorum_5:0.00000001,IS204_Camptoloma_lyperiiflorum_1:0.00000001):0.00244738,(IS009_Camptoloma_canariensis_1:0.00000001,IS011_Camptoloma_canariensis_2:0.00000001):0.00122249):0.00000008):0.00368069):0.00000008,(((K28700_Buddleja_sp:3.85558185,(IS709_Emorya_suaveolens:1.04593254,(IS713_Aptosimum_arenarium:0.00575194,(IS706_Sutera_foetida:3.85056171,(IS714_Peliostomum_virgatum_cf:0.00000052,IS719_Hebenstretia_dentata:0.02973806):0.00010432):0.01451585):0.00078457):0.00713734):0.00758247,(IS717_Leucophyllum_texanum:0.00486788,(IS716_Capraria_biflora:0.01525637,(IS699_Myoporum_sandwicense:0.00366706,IS700_Myoporum_tetrandrum:0.00120774):0.01372749):0.02455948):0.00765951):0.01367345,((IS725_Buddleja_salvifolia:0.00000009,(IS727_Buddleja_tucumanensis:0.00123604,K44467_Buddleja_megalocephala:0.00379654):0.00507674):0.00125253,(K11386_Buddleja_davidii:0.00126220,(K37994_Buddleja_colvilei:0.00125561,(IS712_Gomphostigma_virgatum:0.00250081,IS715_Gomphostigma_virgatum:0.00512411):0.01275289):0.00124273):0.00000007):0.00625256):0.00000007):0.00125332):0.00125504):0.00000006):0.00275728):0.00123194):0.00990523):0.01882200):0.00706640):0.03610244):0.00287777);
+ 
+ 
+* AICc MODEL SELECTION : Selection uncertainty
+ 
+Model             -lnL    K     AICc       delta       weight   cumWeight
+------------------------------------------------------------------------- 
+TVM+G       4133.20981   94  8475.043177   0.000000    0.516592   0.516592 
+TVM+I+G     4133.10736   95  8477.301425   2.258249    0.167022   0.683614 
+GTR+G       4133.19963   95  8477.485965   2.442789    0.152301   0.835915 
+TPM1uf+G    4137.71210   92  8479.138486   4.095309    0.066660   0.902575 
+GTR+I+G     4133.09591   96  8479.747376   4.704199    0.049164   0.951738 
+TPM1uf+I+G  4137.59899   93  8481.364070   6.320893    0.021907   0.973645 
+TIM1+G      4137.71131   93  8481.588710   6.545533    0.019580   0.993225 
+TIM1+I+G    4137.59794   94  8483.819437   8.776260    0.006418   0.999643 
+TVM+I       4140.90322   94  8490.429997  15.386820    0.000235   0.999878 
+GTR+I       4140.90324   95  8492.893185  17.850009   6.87e-005   0.999947 
+TPM1uf+I    4145.10898   92  8493.932246  18.889069   4.09e-005   0.999988 
+TIM1+I      4145.10860   93  8496.383290  21.340113   1.20e-005   1.000000 
+TPM3uf+G    4153.03686   92  8509.788006  34.744829   1.47e-008   1.000000 
+TPM3uf+I+G  4152.92642   93  8512.018930  36.975753   4.83e-009   1.000000 
+TIM3+G      4153.00209   93  8512.170270  37.127093   4.48e-009   1.000000 
+TIM3+I+G    4152.89029   94  8514.404137  39.360960   1.47e-009   1.000000 
+TPM2uf+G    4158.04351   92  8519.801306  44.758129   9.86e-011   1.000000 
+TPM2uf+I+G  4157.90631   93  8521.978710  46.935533   3.32e-011   1.000000 
+TIM2+G      4158.03840   93  8522.242890  47.199713   2.91e-011   1.000000 
+TPM3uf+I    4159.86975   92  8523.453786  48.410609   1.59e-011   1.000000 
+HKY+G       4161.17809   91  8523.624304  48.581128   1.46e-011   1.000000 
+TIM2+I+G    4157.90177   94  8524.427097  49.383920   9.76e-012   1.000000 
+HKY+I+G     4161.03509   92  8525.784466  50.741289   4.95e-012   1.000000 
+TrN+G       4161.17745   92  8526.069186  51.026009   4.30e-012   1.000000 
+TIM3+I      4159.99768   93  8526.161450  51.118273   4.10e-012   1.000000 
+TrN+I+G     4161.03416   93  8528.234410  53.191233   1.45e-012   1.000000 
+TPM2uf+I    4165.39173   92  8534.497746  59.454569   6.35e-014   1.000000 
+TIM2+I      4165.38595   93  8536.937990  61.894813   1.87e-014   1.000000 
+HKY+I       4168.01037   91  8537.288864  62.245688   1.57e-014   1.000000 
+TrN+I       4168.00980   92  8539.733886  64.690709   4.63e-015   1.000000 
+TVM         4184.58569   93  8575.337470  100.294293   8.60e-023   1.000000 
+GTR         4184.57960   94  8577.782757  102.739580   2.53e-023   1.000000 
+TPM1uf      4190.31086   91  8581.889844  106.846668   3.25e-024   1.000000 
+TIM1        4190.30885   92  8584.331986  109.288809   9.58e-025   1.000000 
+F81+G       4201.60070   90  8602.028986  126.985810   1.38e-028   1.000000 
+F81+I+G     4201.44173   91  8604.151584  129.108408   4.76e-029   1.000000 
+TPM3uf      4203.99855   91  8609.265224  134.222048   3.69e-030   1.000000 
+TIM3        4203.99061   92  8611.695506  136.652329   1.10e-030   1.000000 
+F81+I       4208.22616   90  8615.279906  140.236730   1.82e-031   1.000000 
+TPM1+G      4210.92477   89  8618.242192  143.199016   4.15e-032   1.000000 
+TIM1ef+G    4210.46967   90  8619.766926  144.723750   1.94e-032   1.000000 
+TPM1+I+G    4210.69925   90  8620.226086  145.182910   1.54e-032   1.000000 
+TIM1ef+I+G  4210.25104   91  8621.770204  146.727028   7.11e-033   1.000000 
+TVMef+G     4210.54389   91  8622.355904  147.312728   5.30e-033   1.000000 
+SYM+G       4210.07771   92  8623.869706  148.826529   2.49e-033   1.000000 
+TVMef+I+G   4210.31357   92  8624.341426  149.298249   1.97e-033   1.000000 
+TPM2uf      4211.74338   91  8624.754884  149.711708   1.60e-033   1.000000 
+SYM+I+G     4209.85412   93  8625.874330  150.831153   9.13e-034   1.000000 
+TIM2        4211.74310   92  8627.200486  152.157309   4.71e-034   1.000000 
+HKY         4215.19156   90  8629.210706  154.167530   1.72e-034   1.000000 
+TrN         4215.19103   91  8631.650184  156.607008   5.09e-035   1.000000 
+TPM1+I      4218.28168   89  8632.956012  157.912836   2.65e-035   1.000000 
+TIM1ef+I    4217.70045   90  8634.228486  159.185310   1.40e-035   1.000000 
+TVMef+I     4217.92178   91  8637.111684  162.068508   3.31e-036   1.000000 
+SYM+I       4217.31895   92  8638.352186  163.309009   1.78e-036   1.000000 
+K80+G       4226.51369   88  8646.990683  171.947506   2.37e-038   1.000000 
+TrNef+G     4226.04000   89  8648.472652  173.429476   1.13e-038   1.000000 
+K80+I+G     4226.29508   89  8648.982812  173.939636   8.76e-039   1.000000 
+TPM3+G      4226.40139   89  8649.195432  174.152256   7.88e-039   1.000000 
+TPM2+G      4226.46688   89  8649.326412  174.283236   7.38e-039   1.000000 
+TrNef+I+G   4225.82768   90  8650.482946  175.439770   4.14e-039   1.000000 
+TIM3ef+G    4225.90935   90  8650.646286  175.603110   3.81e-039   1.000000 
+TIM2ef+G    4225.98552   90  8650.798626  175.755450   3.53e-039   1.000000 
+TPM3+I+G    4226.19143   90  8651.210446  176.167270   2.88e-039   1.000000 
+TPM2+I+G    4226.24737   90  8651.322326  176.279150   2.72e-039   1.000000 
+TIM3ef+I+G  4225.70428   91  8652.676684  177.633508   1.38e-039   1.000000 
+TIM2ef+I+G  4225.77191   91  8652.811944  177.768768   1.29e-039   1.000000 
+K80+I       4233.64318   88  8661.249663  186.206486   1.90e-041   1.000000 
+TrNef+I     4233.04503   89  8662.482712  187.439536   1.03e-041   1.000000 
+TPM3+I      4233.44129   89  8663.275232  188.232056   6.90e-042   1.000000 
+TPM2+I      4233.59164   89  8663.575932  188.532756   5.94e-042   1.000000 
+TIM3ef+I    4232.81357   90  8664.454726  189.411550   3.83e-042   1.000000 
+TIM2ef+I    4232.98425   90  8664.796086  189.752910   3.23e-042   1.000000 
+F81         4257.57983   89  8711.552312  236.509136   2.27e-052   1.000000 
+JC+G        4261.53860   87  8714.616719  239.573542   4.90e-053   1.000000 
+JC+I+G      4261.33556   88  8716.634423  241.591246   1.79e-053   1.000000 
+JC+I        4268.56178   87  8728.663079  253.619902   4.37e-056   1.000000 
+TPM1        4273.16803   88  8740.299363  265.256186   1.30e-058   1.000000 
+TIM1ef      4272.51906   89  8741.430772  266.387596   7.38e-059   1.000000 
+TVMef       4272.86136   90  8744.550306  269.507130   1.55e-059   1.000000 
+SYM         4272.21472   91  8745.697564  270.654388   8.74e-060   1.000000 
+TPM3        4286.95757   88  8767.878443  292.835266   1.33e-064   1.000000 
+K80         4288.28161   87  8768.102739  293.059562   1.19e-064   1.000000 
+TIM3ef      4286.29240   89  8768.977452  293.934276   7.69e-065   1.000000 
+TrNef       4287.61528   88  8769.193863  294.150686   6.90e-065   1.000000 
+TPM2        4288.19707   88  8770.357443  295.314266   3.86e-065   1.000000 
+TIM2ef      4287.52814   89  8771.448932  296.405756   2.24e-065   1.000000 
+JC          4322.42740   86  8833.976081  358.932905   5.91e-079   1.000000
+-------------------------------------------------------------------------
+-lnL:	negative log likelihod
+ K:	number of estimated parameters
+ AICc:	Corrected Akaike Information Criterion
+ delta:	AICc difference
+ weight:	AICc weight
+ cumWeight:	cumulative AICc weight
+ 
+ 
+* AICc MODEL SELECTION : Confidence interval
+ 
+There are 88 models in the 100% confidence interval: [ TVM+G TVM+I+G GTR+G TPM1uf+G GTR+I+G TPM1uf+I+G TIM1+G TIM1+I+G TVM+I GTR+I TPM1uf+I TIM1+I TPM3uf+G TPM3uf+I+G TIM3+G TIM3+I+G TPM2uf+G TPM2uf+I+G TIM2+G TPM3uf+I HKY+G TIM2+I+G HKY+I+G TrN+G TIM3+I TrN+I+G TPM2uf+I TIM2+I HKY+I TrN+I TVM GTR TPM1uf TIM1 F81+G F81+I+G TPM3uf TIM3 F81+I TPM1+G TIM1ef+G TPM1+I+G TIM1ef+I+G TVMef+G SYM+G TVMef+I+G TPM2uf SYM+I+G TIM2 HKY TrN TPM1+I TIM1ef+I TVMef+I SYM+I K80+G TrNef+G K80+I+G TPM3+G TPM2+G TrNef+I+G TIM3ef+G TIM2ef+G TPM3+I+G TPM2+I+G TIM3ef+I+G TIM2ef+I+G K80+I TrNef+I TPM3+I TPM2+I TIM3ef+I TIM2ef+I F81 JC+G JC+I+G JC+I TPM1 TIM1ef TVMef SYM TPM3 K80 TIM3ef TrNef TPM2 TIM2ef JC ] 
+ 
+ 
+* AICc MODEL SELECTION : Parameter importance
+ 
+Parameter   Importance
+----------------------
+fA	    1.0000
+fC	    1.0000
+fG	    1.0000
+fT	    1.0000
+kappa	    0.0000
+titv	    0.0000
+rAC	    0.8854
+rAG	    1.0000
+rAT	    1.0000
+rCG	    1.0000
+rCT	    1.0000
+rGT	    1.0000
+pinv(I)	    0.0004
+alpha(G)	    0.7551
+pinv(IG)	    0.2445
+alpha(IG)	    0.2445
+----------------------
+Values have been rounded.
+ (I):  considers only +I models.
+ (G):  considers only +G models.
+ (IG): considers only +I+G models.
+ 
+ 
+* AICc MODEL SELECTION : Best Model's command line
+ 
+phyml  -i /tmp/jmodeltest5580669905982529847.phy -d nt -n 1 -b 0 --run_id TVM+G -m 012314 -f m -c 4 -a e --no_memory_check -o tlr -s BEST
+ 
+ 
+ 
+---------------------------------------------------------------
+*                                                             *
+*                    MODEL AVERAGED PHYLOGENY                 *
+*                                                             *
+---------------------------------------------------------------
+ 
+Selection criterion: . . . . AICc
+Confidence interval: . . . . 1.00
+Consensus type:. . . . . . . 50% majority rule
+ 
+ 
+Using 88 models in the 1.00 confidence interval = TVM+G TVM+I+G GTR+G TPM1uf+G GTR+I+G TPM1uf+I+G TIM1+G TIM1+I+G TVM+I GTR+I TPM1uf+I TIM1+I TPM3uf+G TPM3uf+I+G TIM3+G TIM3+I+G TPM2uf+G TPM2uf+I+G TIM2+G TPM3uf+I HKY+G TIM2+I+G HKY+I+G TrN+G TIM3+I TrN+I+G TPM2uf+I TIM2+I HKY+I TrN+I TVM GTR TPM1uf TIM1 F81+G F81+I+G TPM3uf TIM3 F81+I TPM1+G TIM1ef+G TPM1+I+G TIM1ef+I+G TVMef+G SYM+G TVMef+I+G TPM2uf SYM+I+G TIM2 HKY TrN TPM1+I TIM1ef+I TVMef+I SYM+I K80+G TrNef+G K80+I+G TPM3+G TPM2+G TrNef+I+G TIM3ef+G TIM2ef+G TPM3+I+G TPM2+I+G TIM3ef+I+G TIM2ef+I+G K80+I TrNef+I TPM3+I TPM2+I TIM3ef+I TIM2ef+I F81 JC+G JC+I+G JC+I TPM1 TIM1ef TVMef SYM TPM3 K80 TIM3ef TrNef TPM2 TIM2ef JC  
+ 
+Species in order:
+ 
+    1. IS702_Manulea_crassifolia
+    2. IS703_Manulea_glandulosa
+    3. IS701_Manulea_pusilla
+    4. IS707_Sutera_foetida
+    5. IS718_Glumicalyx_lesuticus
+    6. IS722_Zaluzianskya_violacea
+    7. IS721_Pseudoselago_sp
+    8. IS704_Lyperia_antirrhinoides
+    9. IS705_Lyperia_antirrhinoides
+    10. IS708_Jamesbrittenia_heucherifolia
+    11. IS724_Verbascum_virgatum
+    12. IS720_Limosella_aquatica
+    13. IS723_Scrophularia_arguta
+    14. IS728_Phygelius_aff_capensis
+    15. K12967_Phygelius_capensis
+    16. K33183_Phygelius_capensis
+    17. K27324_Freylinia_undulata
+    18. K27540_Teedia_lucida
+    19. K27202_Oftia_africana
+    20. K5747_Oftia_africana
+    21. IS710_Dermatobotrys_saundersii
+    22. IS749_Camptoloma_rotundifolium_1
+    23. IS751_Camptoloma_rotundifolium_3
+    24. IS203_Camptoloma_lyperiiflorum_5
+    25. IS204_Camptoloma_lyperiiflorum_1
+    26. IS009_Camptoloma_canariensis_1
+    27. IS011_Camptoloma_canariensis_2
+    28. K28700_Buddleja_sp
+    29. IS709_Emorya_suaveolens
+    30. IS713_Aptosimum_arenarium
+    31. IS706_Sutera_foetida
+    32. IS714_Peliostomum_virgatum_cf
+    33. IS719_Hebenstretia_dentata
+    34. IS717_Leucophyllum_texanum
+    35. IS716_Capraria_biflora
+    36. IS699_Myoporum_sandwicense
+    37. IS700_Myoporum_tetrandrum
+    38. IS725_Buddleja_salvifolia
+    39. IS727_Buddleja_tucumanensis
+    40. K44467_Buddleja_megalocephala
+    41. K11386_Buddleja_davidii
+    42. K37994_Buddleja_colvilei
+    43. IS712_Gomphostigma_virgatum
+    44. IS715_Gomphostigma_virgatum
+ 
+Bipartitions included in the consensus tree
+ 
+    12345678911111111112222222222333333333344444
+             01234567890123456789012345678901234
+    ******************************************** ( 1.0 )
+    --****************************************** ( 0.75514 )
+    ---***************************************** ( 0.75514 )
+    ----**************************************** ( 0.73556 )
+    ----***------------------------------------- ( 0.75544 )
+    -----**------------------------------------- ( 0.77704 )
+    -------************************************* ( 0.73556 )
+    -------**----------------------------------- ( 1.0 )
+    ---------*********************************** ( 0.73556 )
+    ---------***-------------------------------- ( 0.75514 )
+    ----------**-------------------------------- ( 1.0 )
+    ------------******************************** ( 0.73556 )
+    -------------******************************* ( 0.73556 )
+    -------------***---------------------------- ( 1.0 )
+    --------------**---------------------------- ( 1.0 )
+    ----------------**************************** ( 0.73556 )
+    -----------------*************************** ( 0.73556 )
+    -----------------***------------------------ ( 1.0 )
+    ------------------**------------------------ ( 0.9997 )
+    --------------------************************ ( 0.73556 )
+    --------------------*******----------------- ( 0.75544 )
+    ---------------------******----------------- ( 1.0 )
+    ---------------------**--------------------- ( 1.0 )
+    -----------------------****----------------- ( 0.75519 )
+    -----------------------**------------------- ( 1.0 )
+    -------------------------**----------------- ( 1.0 )
+    ---------------------------***************** ( 0.73556 )
+    ---------------------------**********------- ( 0.73556 )
+    ---------------------------******----------- ( 0.73556 )
+    ----------------------------*****----------- ( 0.53618 )
+    ------------------------------***----------- ( 0.6689 )
+    -------------------------------**----------- ( 1.0 )
+    ---------------------------------****------- ( 1.0 )
+    ----------------------------------***------- ( 1.0 )
+    -----------------------------------**------- ( 1.0 )
+    -------------------------------------******* ( 1.0 )
+    -------------------------------------***---- ( 1.0 )
+    --------------------------------------**---- ( 1.0 )
+    ----------------------------------------**** ( 0.75514 )
+    -----------------------------------------*** ( 1.0 )
+    ------------------------------------------** ( 1.0 )
+
+ 
+                                                +-44 IS719_Hebenstretia_dentata
+                                             +-69
+                                             |  +-43 IS714_Peliostomum_virgatum_cf
+                                          +-70
+                                          |  +----------------------42 IS706_Sutera_foetida
+                                          |
+                                          +-41 IS713_Aptosimum_arenarium
+                                       +-71
+                                       |  +----40 IS709_Emorya_suaveolens
+                                    +-72
+                                    |  +----------------------39 K28700_Buddleja_sp
+                                 +-73
+                                 |  |        +-38 IS700_Myoporum_tetrandrum
+                                 |  |     +-66
+                                 |  |     |  +-37 IS699_Myoporum_sandwicense
+                                 |  |  +-67
+                                 |  |  |  +-36 IS716_Capraria_biflora
+                                 |  +-68
+                                 |     +-35 IS717_Leucophyllum_texanum
+                              +-74
+                              |  |           +-34 IS715_Gomphostigma_virgatum
+                              |  |        +-62
+                              |  |        |  +-33 IS712_Gomphostigma_virgatum
+                              |  |     +-63
+                              |  |     |  +-32 K37994_Buddleja_colvilei
+                              |  |  +-64
+                              |  |  |  +-31 K11386_Buddleja_davidii
+                              |  +-65
+                              |     |     +-30 K44467_Buddleja_megalocephala
+                              |     |  +-60
+                              |     |  |  +-29 IS727_Buddleja_tucumanensis
+                              |     +-61
+                              |        +-28 IS725_Buddleja_salvifolia
+                           +-75
+                           |  |           +-27 IS011_Camptoloma_canariensis_2
+                           |  |        +-56
+                           |  |        |  +-26 IS009_Camptoloma_canariensis_1
+                           |  |     +-57
+                           |  |     |  |  +-25 IS204_Camptoloma_lyperiiflorum_1
+                           |  |     |  +-55
+                           |  |     |     +-24 IS203_Camptoloma_lyperiiflorum_5
+                           |  |  +-58
+                           |  |  |  |  +-23 IS751_Camptoloma_rotundifolium_3
+                           |  |  |  +-54
+                           |  |  |     +-22 IS749_Camptoloma_rotundifolium_1
+                           |  +-59
+                           |     +-21 IS710_Dermatobotrys_saundersii
+                        +-76
+                        |  |     +-20 K5747_Oftia_africana
+                        |  |  +-52
+                        |  |  |  +-19 K27202_Oftia_africana
+                        |  +-53
+                        |     +-18 K27540_Teedia_lucida
+                     +-77
+                     |  +-17 K27324_Freylinia_undulata
+                  +-78
+                  |  |     +-16 K33183_Phygelius_capensis
+                  |  |  +-50
+                  |  |  |  +-15 K12967_Phygelius_capensis
+                  |  +-51
+                  |     +-14 IS728_Phygelius_aff_capensis
+               +-79
+               |  +-13 IS723_Scrophularia_arguta
+            +-80
+            |  |     +-12 IS720_Limosella_aquatica
+            |  |  +-48
+            |  |  |  +-11 IS724_Verbascum_virgatum
+            |  +-49
+            |     +-10 IS708_Jamesbrittenia_heucherifolia
+         +-81
+         |  |  +--9 IS705_Lyperia_antirrhinoides
+         |  +-47
+         |     +--8 IS704_Lyperia_antirrhinoides
+      +-82
+      |  |     +--7 IS721_Pseudoselago_sp
+      |  |  +-45
+      |  |  |  +--6 IS722_Zaluzianskya_violacea
+      |  +-46
+      |     +--5 IS718_Glumicalyx_lesuticus
+   +-83
+   |  +--4 IS707_Sutera_foetida
++-84
+|  +--3 IS701_Manulea_pusilla
+|
++--2 IS703_Manulea_glandulosa
+|
++--1 IS702_Manulea_crassifolia
+
+ 
+(IS702_Manulea_crassifolia:0.0047687900,IS703_Manulea_glandulosa:0.0027399500,(IS701_Manulea_pusilla:0.0074678500,(IS707_Sutera_foetida:0.0344137700,((IS718_Glumicalyx_lesuticus:0.0099726600,(IS722_Zaluzianskya_violacea:0.0433887200,IS721_Pseudoselago_sp:0.0190993200):0.7770:0.0010846700):0.7554:0.0386155600,((IS704_Lyperia_antirrhinoides:0.0000000100,IS705_Lyperia_antirrhinoides:0.0000000100):1.0000:0.0308461500,((IS708_Jamesbrittenia_heucherifolia:0.0238831900,(IS724_Verbascum_virgatum:0.0192937000,IS720_Limosella_aquatica:0.0665024400):1.0000:0.0026880600):0.7551:0.0000000700,(IS723_Scrophularia_arguta:0.0124141000,((IS728_Phygelius_aff_capensis:0.0000000800,(K12967_Phygelius_capensis:0.0000000100,K33183_Phygelius_capensis:0.0000000100):1.0000:0.0012239600):1.0000:0.0085898300,(K27324_Freylinia_undulata:0.0061586100,((K27540_Teedia_lucida:0.0024448500,(K27202_Oftia_africana:0.0000000100,K5747_Oftia_africana:0.0012246900):0.9997:0.0000000100):1.0000:0.0086480700,((IS710_Dermatobotrys_saundersii:0.0062585200,((IS749_Camptoloma_rotundifolium_1:0.0012145100,IS751_Camptoloma_rotundifolium_3:0.0012312800):1.0000:0.0024487000,((IS203_Camptoloma_lyperiiflorum_5:0.0000000100,IS204_Camptoloma_lyperiiflorum_1:0.0000000100):1.0000:0.0024473800,(IS009_Camptoloma_canariensis_1:0.0000000100,IS011_Camptoloma_canariensis_2:0.0000000100):1.0000:0.0012224900):0.7552:0.0000000800):1.0000:0.0036806900):0.7554:0.0000000800,(((IS725_Buddleja_salvifolia:0.0000000900,(IS727_Buddleja_tucumanensis:0.0012360400,K44467_Buddleja_megalocephala:0.0037965400):1.0000:0.0050767400):1.0000:0.0012525300,(K11386_Buddleja_davidii:0.0012622000,(K37994_Buddleja_colvilei:0.0012556100,(IS712_Gomphostigma_virgatum:0.0025008100,IS715_Gomphostigma_virgatum:0.0051241100):1.0000:0.0127528900):1.0000:0.0012427300):0.7551:0.0000000700):1.0000:0.0062525600,((IS717_Leucophyllum_texanum:0.0048678800,(IS716_Capraria_biflora:0.0152563700,(IS699_Myoporum_sandwicense:0.0036670600,IS700_Myoporum_tetrandrum:0.0012077400):1.0000:0.0137274900):1.0000:0.0245594800):1.0000:0.0076595100,(K28700_Buddleja_sp:3.8555818500,(IS709_Emorya_suaveolens:1.0459325400,IS713_Aptosimum_arenarium:0.0057519400,(IS706_Sutera_foetida:3.8505617100,(IS714_Peliostomum_virgatum_cf:0.0000005200,IS719_Hebenstretia_dentata:0.0297380600):1.0000:0.0001043200):0.6689:0.0145158500):0.5362:0.0071373400):0.7356:0.0075824700):0.7356:0.0136734500):0.7356:0.0000000700):0.7356:0.0012533200):0.7356:0.0012550400):0.7356:0.0000000600):0.7356:0.0027572800):0.7356:0.0012319400):0.7356:0.0099052300):0.7356:0.0188220000):0.7356:0.0070664000):0.7551:0.0361024400):0.7551:0.0028777700);
+ 
+Note: this tree is unrooted. Branch lengths are the expected number of substitutions per site. Labels next to parentheses represent phylogenetic uncertainty due to model selection (see documentation)
+
+
+
+---------------------------------------------------------------
+*                                                             *
+*             BAYESIAN INFORMATION CRITERION (BIC)            *
+*                                                             *
+---------------------------------------------------------------
+ 
+ Sample size: 961.0
+ 
+ Model selected: 
+   Model = TPM1uf+G
+   partition = 012210
+   -lnL = 4137.7121
+   K = 92
+   freqA = 0.3460 
+   freqC = 0.1562 
+   freqG = 0.1835 
+   freqT = 0.3143 
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  1.5770
+   R(c) [AT] =  0.3616
+   R(d) [CG] =  0.3616
+   R(e) [CT] =  1.5770
+   R(f) [GT] =  1.0000
+   gamma shape = 0.6400 
+
+--
+PAUP* Commands Block:
+ If you want to load the selected model and associated estimates in PAUP*,
+ attach the next block of commands after the data in your PAUP file:
+
+[!
+Likelihood settings from best-fit model (TPM1uf+G) selected by BIC
+with jModeltest 2.1.10 v20160303 on Wed Jul 12 05:09:11 PDT 2017]
+
+BEGIN PAUP;
+Lset base=(0.3460 0.1562 0.1835 ) nst=6  rmat=(1.0000 1.5770 0.3616 0.3616 1.5770) rates=gamma shape=0.6400 ncat=4 pinvar=0;
+END;
+--
+ 
+Tree for the best BIC model = (IS702_Manulea_crassifolia:0.00481658,IS703_Manulea_glandulosa:0.00275634,(IS701_Manulea_pusilla:0.00764685,(IS707_Sutera_foetida:0.03475208,((IS718_Glumicalyx_lesuticus:0.00999403,(IS722_Zaluzianskya_violacea:0.04340251,IS721_Pseudoselago_sp:0.01920840):0.00102543):0.03895727,((IS704_Lyperia_antirrhinoides:0.00000001,IS705_Lyperia_antirrhinoides:0.00000001):0.03081621,((IS708_Jamesbrittenia_heucherifolia:0.02397383,(IS724_Verbascum_virgatum:0.01932387,IS720_Limosella_aquatica:0.06628036):0.00270380):0.00000007,(IS723_Scrophularia_arguta:0.01246950,((IS728_Phygelius_aff_capensis:0.00000008,(K12967_Phygelius_capensis:0.00000001,K33183_Phygelius_capensis:0.00000001):0.00122934):0.00862620,(K27324_Freylinia_undulata:0.00618101,((K27540_Teedia_lucida:0.00246051,(K27202_Oftia_africana:0.00000001,K5747_Oftia_africana:0.00123157):0.00000001):0.00869561,((IS710_Dermatobotrys_saundersii:0.00631885,((IS749_Camptoloma_rotundifolium_1:0.00121997,IS751_Camptoloma_rotundifolium_3:0.00123908):0.00246018,((IS203_Camptoloma_lyperiiflorum_5:0.00000001,IS204_Camptoloma_lyperiiflorum_1:0.00000001):0.00245895,(IS009_Camptoloma_canariensis_1:0.00000001,IS011_Camptoloma_canariensis_2:0.00000001):0.00122820):0.00000008):0.00369834):0.00000008,(((IS706_Sutera_foetida:5.23019952,((IS713_Aptosimum_arenarium:0.00585761,(IS714_Peliostomum_virgatum_cf:0.00000304,IS719_Hebenstretia_dentata:0.02982685):0.01455324):0.00080214,(K28700_Buddleja_sp:3.84067593,IS709_Emorya_suaveolens:4.08604504):5.22608838):0.00721543):0.00764864,(IS717_Leucophyllum_texanum:0.00471623,(IS716_Capraria_biflora:0.01545180,(IS699_Myoporum_sandwicense:0.00369430,IS700_Myoporum_tetrandrum:0.00121261):0.01375791):0.02492176):0.00770118):0.01365535,((IS725_Buddleja_salvifolia:0.00000009,(IS727_Buddleja_tucumanensis:0.00124138,K44467_Buddleja_megalocephala:0.00381113):0.00508995):0.00125535,(K11386_Buddleja_davidii:0.00126467,(K37994_Buddleja_colvilei:0.00125810,(IS712_Gomphostigma_virgatum:0.00250543,IS715_Gomphostigma_virgatum:0.00513367):0.01281943):0.00124643):0.00000007):0.00626621):0.00000007):0.00125779):0.00126088):0.00000006):0.00275063):0.00124069):0.00993885):0.01909328):0.00695870):0.03654190):0.00271682);
+ 
+ 
+* BIC MODEL SELECTION : Selection uncertainty
+ 
+Model             -lnL    K      BIC       delta       weight   cumWeight
+------------------------------------------------------------------------- 
+TPM1uf+G    4137.71210   92  8907.277846   0.000000    0.854221   0.854221 
+TVM+G       4133.20981   94  8912.009214   4.731369    0.080199   0.934419 
+TPM1uf+I+G  4137.59899   93  8913.919600   6.641754    0.030855   0.965275 
+TIM1+G      4137.71131   93  8914.144240   6.866394    0.027577   0.992852 
+TVM+I+G     4133.10736   95  8918.672289  11.394443    0.002866   0.995718 
+GTR+G       4133.19963   95  8918.856829  11.578983    0.002614   0.998331 
+TIM1+I+G    4137.59794   94  8920.785474  13.507629    0.000996   0.999328 
+TPM1uf+I    4145.10898   92  8922.071606  14.793760    0.000524   0.999852 
+GTR+I+G     4133.09591   96  8925.517363  18.239518   9.35e-005   0.999945 
+TVM+I       4140.90322   94  8927.396034  20.118189   3.66e-005   0.999982 
+TIM1+I      4145.10860   93  8928.938820  21.660974   1.69e-005   0.999999 
+GTR+I       4140.90324   95  8934.264049  26.986203   1.18e-006   1.000000 
+TPM3uf+G    4153.03686   92  8937.927366  30.649520   1.89e-007   1.000000 
+TPM3uf+I+G  4152.92642   93  8944.574460  37.296614   6.80e-009   1.000000 
+TIM3+G      4153.00209   93  8944.725800  37.447954   6.31e-009   1.000000 
+HKY+G       4161.17809   91  8947.341851  40.064006   1.71e-009   1.000000 
+TPM2uf+G    4158.04351   92  8947.940666  40.662820   1.26e-009   1.000000 
+TIM3+I+G    4152.89029   94  8951.370174  44.092329   2.28e-010   1.000000 
+TPM3uf+I    4159.86975   92  8951.593146  44.315300   2.04e-010   1.000000 
+HKY+I+G     4161.03509   92  8953.923826  46.645980   6.35e-011   1.000000 
+TrN+G       4161.17745   92  8954.208546  46.930700   5.50e-011   1.000000 
+TPM2uf+I+G  4157.90631   93  8954.534240  47.256394   4.68e-011   1.000000 
+TIM2+G      4158.03840   93  8954.798420  47.520574   4.10e-011   1.000000 
+TIM3+I      4159.99768   93  8958.716980  51.439134   5.78e-012   1.000000 
+TrN+I+G     4161.03416   93  8960.789940  53.512094   2.05e-012   1.000000 
+HKY+I       4168.01037   91  8961.006411  53.728566   1.84e-012   1.000000 
+TIM2+I+G    4157.90177   94  8961.393134  54.115289   1.52e-012   1.000000 
+TPM2uf+I    4165.39173   92  8962.637106  55.359260   8.14e-013   1.000000 
+TrN+I       4168.00980   92  8967.873246  60.595400   5.94e-014   1.000000 
+TIM2+I      4165.38595   93  8969.493520  62.215674   2.64e-014   1.000000 
+TPM1uf      4190.31086   91  9005.607391  98.329546   3.80e-022   1.000000 
+TVM         4184.58569   93  9007.893000  100.615154   1.21e-022   1.000000 
+TIM1        4190.30885   92  9012.471346  105.193500   1.23e-023   1.000000 
+GTR         4184.57960   94  9014.748794  107.470949   3.93e-024   1.000000 
+F81+G       4201.60070   90  9021.319097  114.041251   1.47e-025   1.000000 
+F81+I+G     4201.44173   91  9027.869131  120.591286   5.57e-027   1.000000 
+TPM3uf      4203.99855   91  9032.982771  125.704926   4.32e-028   1.000000 
+TPM1+G      4210.92477   89  9033.099262  125.821417   4.07e-028   1.000000 
+F81+I       4208.22616   90  9034.570017  127.292171   1.95e-028   1.000000 
+TIM1ef+G    4210.46967   90  9039.057037  131.779191   2.07e-029   1.000000 
+TPM1+I+G    4210.69925   90  9039.516197  132.238351   1.65e-029   1.000000 
+TIM3        4203.99061   92  9039.834866  132.557020   1.40e-029   1.000000 
+TIM1ef+I+G  4210.25104   91  9045.487751  138.209906   8.31e-031   1.000000 
+TVMef+G     4210.54389   91  9046.073451  138.795606   6.20e-031   1.000000 
+TPM1+I      4218.28168   89  9047.813082  140.535237   2.60e-031   1.000000 
+TPM2uf      4211.74338   91  9048.472431  141.194586   1.87e-031   1.000000 
+HKY         4215.19156   90  9048.500817  141.222971   1.84e-031   1.000000 
+SYM+G       4210.07771   92  9052.009066  144.731220   3.19e-032   1.000000 
+TVMef+I+G   4210.31357   92  9052.480786  145.202940   2.52e-032   1.000000 
+TIM1ef+I    4217.70045   90  9053.518597  146.240751   1.50e-032   1.000000 
+TIM2        4211.74310   92  9055.339846  148.062000   6.03e-033   1.000000 
+TrN         4215.19103   91  9055.367731  148.089886   5.95e-033   1.000000 
+K80+G       4226.51369   88  9057.409128  150.131282   2.14e-033   1.000000 
+SYM+I+G     4209.85412   93  9058.429860  151.152014   1.29e-033   1.000000 
+TVMef+I     4217.92178   91  9060.829231  153.551386   3.88e-034   1.000000 
+TrNef+G     4226.04000   89  9063.329722  156.051877   1.11e-034   1.000000 
+K80+I+G     4226.29508   89  9063.839882  156.562037   8.60e-035   1.000000 
+TPM3+G      4226.40139   89  9064.052502  156.774657   7.73e-035   1.000000 
+TPM2+G      4226.46688   89  9064.183482  156.905637   7.24e-035   1.000000 
+SYM+I       4217.31895   92  9066.491546  159.213700   2.28e-035   1.000000 
+TrNef+I+G   4225.82768   90  9069.773057  162.495211   4.43e-036   1.000000 
+TIM3ef+G    4225.90935   90  9069.936397  162.658551   4.08e-036   1.000000 
+TIM2ef+G    4225.98552   90  9070.088737  162.810891   3.78e-036   1.000000 
+TPM3+I+G    4226.19143   90  9070.500557  163.222711   3.08e-036   1.000000 
+TPM2+I+G    4226.24737   90  9070.612437  163.334591   2.91e-036   1.000000 
+K80+I       4233.64318   88  9071.668108  164.390262   1.72e-036   1.000000 
+TIM3ef+I+G  4225.70428   91  9076.394231  169.116386   1.62e-037   1.000000 
+TIM2ef+I+G  4225.77191   91  9076.529491  169.251646   1.51e-037   1.000000 
+TrNef+I     4233.04503   89  9077.339782  170.061937   1.01e-037   1.000000 
+TPM3+I      4233.44129   89  9078.132302  170.854457   6.78e-038   1.000000 
+TPM2+I      4233.59164   89  9078.433002  171.155157   5.83e-038   1.000000 
+TIM3ef+I    4232.81357   90  9083.744837  176.466991   4.09e-039   1.000000 
+TIM2ef+I    4232.98425   90  9084.086197  176.808351   3.45e-039   1.000000 
+JC+G        4261.53860   87  9120.590974  213.313128   4.09e-047   1.000000 
+F81         4257.57983   89  9126.409382  219.131537   2.23e-048   1.000000 
+JC+I+G      4261.33556   88  9127.052868  219.775022   1.61e-048   1.000000 
+JC+I        4268.56178   87  9134.637334  227.359488   3.64e-050   1.000000 
+TPM1        4273.16803   88  9150.717808  243.439962   1.17e-053   1.000000 
+TIM1ef      4272.51906   89  9156.287842  249.009997   7.24e-055   1.000000 
+TVMef       4272.86136   90  9163.840417  256.562571   1.66e-056   1.000000 
+SYM         4272.21472   91  9169.415111  262.137266   1.02e-057   1.000000 
+K80         4288.28161   87  9174.076994  266.799148   9.93e-059   1.000000 
+TPM3        4286.95757   88  9178.296888  271.019042   1.20e-059   1.000000 
+TrNef       4287.61528   88  9179.612308  272.334462   6.24e-060   1.000000 
+TPM2        4288.19707   88  9180.775888  273.498042   3.49e-060   1.000000 
+TIM3ef      4286.29240   89  9183.834522  276.556677   7.55e-061   1.000000 
+TIM2ef      4287.52814   89  9186.306002  279.028157   2.19e-061   1.000000 
+JC          4322.42740   86  9235.500599  328.222754   4.56e-072   1.000000
+-------------------------------------------------------------------------
+-lnL:	negative log likelihod
+K:	number of estimated parameters
+BIC:	Bayesian Information Criterion
+delta:	BIC difference
+weight:	BIC weight
+cumWeight:	cumulative BIC weight
+ 
+ 
+* BIC MODEL SELECTION : Confidence interval
+ 
+There are 88 models in the 100% confidence interval: [ TPM1uf+G TVM+G TPM1uf+I+G TIM1+G TVM+I+G GTR+G TIM1+I+G TPM1uf+I GTR+I+G TVM+I TIM1+I GTR+I TPM3uf+G TPM3uf+I+G TIM3+G HKY+G TPM2uf+G TIM3+I+G TPM3uf+I HKY+I+G TrN+G TPM2uf+I+G TIM2+G TIM3+I TrN+I+G HKY+I TIM2+I+G TPM2uf+I TrN+I TIM2+I TPM1uf TVM TIM1 GTR F81+G F81+I+G TPM3uf TPM1+G F81+I TIM1ef+G TPM1+I+G TIM3 TIM1ef+I+G TVMef+G TPM1+I TPM2uf HKY SYM+G TVMef+I+G TIM1ef+I TIM2 TrN K80+G SYM+I+G TVMef+I TrNef+G K80+I+G TPM3+G TPM2+G SYM+I TrNef+I+G TIM3ef+G TIM2ef+G TPM3+I+G TPM2+I+G K80+I TIM3ef+I+G TIM2ef+I+G TrNef+I TPM3+I TPM2+I TIM3ef+I TIM2ef+I JC+G F81 JC+I+G JC+I TPM1 TIM1ef TVMef SYM K80 TPM3 TrNef TPM2 TIM3ef TIM2ef JC ] 
+ 
+ 
+* BIC MODEL SELECTION : Parameter importance
+ 
+Parameter   Importance
+----------------------
+fA	    1.0000
+fC	    1.0000
+fG	    1.0000
+fT	    1.0000
+kappa	    0.0000
+titv	    0.0000
+rAC	    0.0858
+rAG	    1.0000
+rAT	    1.0000
+rCG	    1.0000
+rCT	    1.0000
+rGT	    1.0000
+pinv(I)	    0.0006
+alpha(G)	    0.9646
+pinv(IG)	    0.0348
+alpha(IG)	    0.0348
+----------------------
+Values have been rounded.
+ (I):  considers only +I models.
+ (G):  considers only +G models.
+ (IG): considers only +I+G models.
+ 
+ 
+* BIC MODEL SELECTION : Best Model's command line
+ 
+phyml  -i /tmp/jmodeltest5580669905982529847.phy -d nt -n 1 -b 0 --run_id TPM1uf+G -m 012210 -f m -c 4 -a e --no_memory_check -o tlr -s BEST
+ 
+ 
+ 
+---------------------------------------------------------------
+*                                                             *
+*                    MODEL AVERAGED PHYLOGENY                 *
+*                                                             *
+---------------------------------------------------------------
+ 
+Selection criterion: . . . . BIC
+Confidence interval: . . . . 1.00
+Consensus type:. . . . . . . 50% majority rule
+ 
+ 
+Using 88 models in the 1.00 confidence interval = TPM1uf+G TVM+G TPM1uf+I+G TIM1+G TVM+I+G GTR+G TIM1+I+G TPM1uf+I GTR+I+G TVM+I TIM1+I GTR+I TPM3uf+G TPM3uf+I+G TIM3+G HKY+G TPM2uf+G TIM3+I+G TPM3uf+I HKY+I+G TrN+G TPM2uf+I+G TIM2+G TIM3+I TrN+I+G HKY+I TIM2+I+G TPM2uf+I TrN+I TIM2+I TPM1uf TVM TIM1 GTR F81+G F81+I+G TPM3uf TPM1+G F81+I TIM1ef+G TPM1+I+G TIM3 TIM1ef+I+G TVMef+G TPM1+I TPM2uf HKY SYM+G TVMef+I+G TIM1ef+I TIM2 TrN K80+G SYM+I+G TVMef+I TrNef+G K80+I+G TPM3+G TPM2+G SYM+I TrNef+I+G TIM3ef+G TIM2ef+G TPM3+I+G TPM2+I+G K80+I TIM3ef+I+G TIM2ef+I+G TrNef+I TPM3+I TPM2+I TIM3ef+I TIM2ef+I JC+G F81 JC+I+G JC+I TPM1 TIM1ef TVMef SYM K80 TPM3 TrNef TPM2 TIM3ef TIM2ef JC  
+ 
+Species in order:
+ 
+    1. IS702_Manulea_crassifolia
+    2. IS703_Manulea_glandulosa
+    3. IS701_Manulea_pusilla
+    4. IS707_Sutera_foetida
+    5. IS718_Glumicalyx_lesuticus
+    6. IS722_Zaluzianskya_violacea
+    7. IS721_Pseudoselago_sp
+    8. IS704_Lyperia_antirrhinoides
+    9. IS705_Lyperia_antirrhinoides
+    10. IS708_Jamesbrittenia_heucherifolia
+    11. IS724_Verbascum_virgatum
+    12. IS720_Limosella_aquatica
+    13. IS723_Scrophularia_arguta
+    14. IS728_Phygelius_aff_capensis
+    15. K12967_Phygelius_capensis
+    16. K33183_Phygelius_capensis
+    17. K27324_Freylinia_undulata
+    18. K27540_Teedia_lucida
+    19. K27202_Oftia_africana
+    20. K5747_Oftia_africana
+    21. IS710_Dermatobotrys_saundersii
+    22. IS749_Camptoloma_rotundifolium_1
+    23. IS751_Camptoloma_rotundifolium_3
+    24. IS203_Camptoloma_lyperiiflorum_5
+    25. IS204_Camptoloma_lyperiiflorum_1
+    26. IS009_Camptoloma_canariensis_1
+    27. IS011_Camptoloma_canariensis_2
+    28. IS706_Sutera_foetida
+    29. IS713_Aptosimum_arenarium
+    30. IS714_Peliostomum_virgatum_cf
+    31. IS719_Hebenstretia_dentata
+    32. K28700_Buddleja_sp
+    33. IS709_Emorya_suaveolens
+    34. IS717_Leucophyllum_texanum
+    35. IS716_Capraria_biflora
+    36. IS699_Myoporum_sandwicense
+    37. IS700_Myoporum_tetrandrum
+    38. IS725_Buddleja_salvifolia
+    39. IS727_Buddleja_tucumanensis
+    40. K44467_Buddleja_megalocephala
+    41. K11386_Buddleja_davidii
+    42. K37994_Buddleja_colvilei
+    43. IS712_Gomphostigma_virgatum
+    44. IS715_Gomphostigma_virgatum
+ 
+Bipartitions included in the consensus tree
+ 
+    12345678911111111112222222222333333333344444
+             01234567890123456789012345678901234
+    ******************************************** ( 1.0 )
+    --****************************************** ( 0.96462 )
+    ---***************************************** ( 0.96462 )
+    ----**************************************** ( 0.93704 )
+    ----***------------------------------------- ( 0.96465 )
+    -----**------------------------------------- ( 0.99547 )
+    -------************************************* ( 0.93704 )
+    -------**----------------------------------- ( 1.0 )
+    ---------*********************************** ( 0.93704 )
+    ---------***-------------------------------- ( 0.96462 )
+    ----------**-------------------------------- ( 1.0 )
+    ------------******************************** ( 0.93704 )
+    -------------******************************* ( 0.93704 )
+    -------------***---------------------------- ( 1.0 )
+    --------------**---------------------------- ( 1.0 )
+    ----------------**************************** ( 0.93704 )
+    -----------------*************************** ( 0.93704 )
+    -----------------***------------------------ ( 1.0 )
+    ------------------**------------------------ ( 0.99997 )
+    --------------------************************ ( 0.93704 )
+    --------------------*******----------------- ( 0.96465 )
+    ---------------------******----------------- ( 1.0 )
+    ---------------------**--------------------- ( 1.0 )
+    -----------------------****----------------- ( 0.96516 )
+    -----------------------**------------------- ( 1.0 )
+    -------------------------**----------------- ( 1.0 )
+    ---------------------------***************** ( 0.93704 )
+    ---------------------------**********------- ( 0.93704 )
+    ---------------------------******----------- ( 0.93704 )
+    ----------------------------*****----------- ( 0.85423 )
+    ----------------------------***------------- ( 0.88962 )
+    -----------------------------**------------- ( 1.0 )
+    -------------------------------**----------- ( 0.85423 )
+    ---------------------------------****------- ( 1.0 )
+    ----------------------------------***------- ( 1.0 )
+    -----------------------------------**------- ( 1.0 )
+    -------------------------------------******* ( 1.0 )
+    -------------------------------------***---- ( 1.0 )
+    --------------------------------------**---- ( 1.0 )
+    ----------------------------------------**** ( 0.96462 )
+    -----------------------------------------*** ( 1.0 )
+    ------------------------------------------** ( 1.0 )
+
+ 
+                                                                           +------------------------44 IS709_Emorya_suaveolens
+                                          +-------------------------------71
+                                          |                                +----------------------43 K28700_Buddleja_sp
+                                       +-72
+                                       |  |     +-42 IS719_Hebenstretia_dentata
+                                       |  |  +-69
+                                       |  |  |  +-41 IS714_Peliostomum_virgatum_cf
+                                       |  +-70
+                                       |     +-40 IS713_Aptosimum_arenarium
+                                    +-73
+                                    |  +-------------------------------39 IS706_Sutera_foetida
+                                 +-74
+                                 |  |        +-38 IS700_Myoporum_tetrandrum
+                                 |  |     +-66
+                                 |  |     |  +-37 IS699_Myoporum_sandwicense
+                                 |  |  +-67
+                                 |  |  |  +-36 IS716_Capraria_biflora
+                                 |  +-68
+                                 |     +-35 IS717_Leucophyllum_texanum
+                              +-75
+                              |  |           +-34 IS715_Gomphostigma_virgatum
+                              |  |        +-62
+                              |  |        |  +-33 IS712_Gomphostigma_virgatum
+                              |  |     +-63
+                              |  |     |  +-32 K37994_Buddleja_colvilei
+                              |  |  +-64
+                              |  |  |  +-31 K11386_Buddleja_davidii
+                              |  +-65
+                              |     |     +-30 K44467_Buddleja_megalocephala
+                              |     |  +-60
+                              |     |  |  +-29 IS727_Buddleja_tucumanensis
+                              |     +-61
+                              |        +-28 IS725_Buddleja_salvifolia
+                           +-76
+                           |  |           +-27 IS011_Camptoloma_canariensis_2
+                           |  |        +-56
+                           |  |        |  +-26 IS009_Camptoloma_canariensis_1
+                           |  |     +-57
+                           |  |     |  |  +-25 IS204_Camptoloma_lyperiiflorum_1
+                           |  |     |  +-55
+                           |  |     |     +-24 IS203_Camptoloma_lyperiiflorum_5
+                           |  |  +-58
+                           |  |  |  |  +-23 IS751_Camptoloma_rotundifolium_3
+                           |  |  |  +-54
+                           |  |  |     +-22 IS749_Camptoloma_rotundifolium_1
+                           |  +-59
+                           |     +-21 IS710_Dermatobotrys_saundersii
+                        +-77
+                        |  |     +-20 K5747_Oftia_africana
+                        |  |  +-52
+                        |  |  |  +-19 K27202_Oftia_africana
+                        |  +-53
+                        |     +-18 K27540_Teedia_lucida
+                     +-78
+                     |  +-17 K27324_Freylinia_undulata
+                  +-79
+                  |  |     +-16 K33183_Phygelius_capensis
+                  |  |  +-50
+                  |  |  |  +-15 K12967_Phygelius_capensis
+                  |  +-51
+                  |     +-14 IS728_Phygelius_aff_capensis
+               +-80
+               |  +-13 IS723_Scrophularia_arguta
+            +-81
+            |  |     +-12 IS720_Limosella_aquatica
+            |  |  +-48
+            |  |  |  +-11 IS724_Verbascum_virgatum
+            |  +-49
+            |     +-10 IS708_Jamesbrittenia_heucherifolia
+         +-82
+         |  |  +--9 IS705_Lyperia_antirrhinoides
+         |  +-47
+         |     +--8 IS704_Lyperia_antirrhinoides
+      +-83
+      |  |     +--7 IS721_Pseudoselago_sp
+      |  |  +-45
+      |  |  |  +--6 IS722_Zaluzianskya_violacea
+      |  +-46
+      |     +--5 IS718_Glumicalyx_lesuticus
+   +-84
+   |  +--4 IS707_Sutera_foetida
++-85
+|  +--3 IS701_Manulea_pusilla
+|
++--2 IS703_Manulea_glandulosa
+|
++--1 IS702_Manulea_crassifolia
+
+ 
+(IS702_Manulea_crassifolia:0.0048165800,IS703_Manulea_glandulosa:0.0027563400,(IS701_Manulea_pusilla:0.0076468500,(IS707_Sutera_foetida:0.0347520800,((IS718_Glumicalyx_lesuticus:0.0099940300,(IS722_Zaluzianskya_violacea:0.0434025100,IS721_Pseudoselago_sp:0.0192084000):0.9955:0.0010254300):0.9646:0.0389572700,((IS704_Lyperia_antirrhinoides:0.0000000100,IS705_Lyperia_antirrhinoides:0.0000000100):1.0000:0.0308162100,((IS708_Jamesbrittenia_heucherifolia:0.0239738300,(IS724_Verbascum_virgatum:0.0193238700,IS720_Limosella_aquatica:0.0662803600):1.0000:0.0027038000):0.9646:0.0000000700,(IS723_Scrophularia_arguta:0.0124695000,((IS728_Phygelius_aff_capensis:0.0000000800,(K12967_Phygelius_capensis:0.0000000100,K33183_Phygelius_capensis:0.0000000100):1.0000:0.0012293400):1.0000:0.0086262000,(K27324_Freylinia_undulata:0.0061810100,((K27540_Teedia_lucida:0.0024605100,(K27202_Oftia_africana:0.0000000100,K5747_Oftia_africana:0.0012315700):1.0000:0.0000000100):1.0000:0.0086956100,((IS710_Dermatobotrys_saundersii:0.0063188500,((IS749_Camptoloma_rotundifolium_1:0.0012199700,IS751_Camptoloma_rotundifolium_3:0.0012390800):1.0000:0.0024601800,((IS203_Camptoloma_lyperiiflorum_5:0.0000000100,IS204_Camptoloma_lyperiiflorum_1:0.0000000100):1.0000:0.0024589500,(IS009_Camptoloma_canariensis_1:0.0000000100,IS011_Camptoloma_canariensis_2:0.0000000100):1.0000:0.0012282000):0.9652:0.0000000800):1.0000:0.0036983400):0.9646:0.0000000800,(((IS725_Buddleja_salvifolia:0.0000000900,(IS727_Buddleja_tucumanensis:0.0012413800,K44467_Buddleja_megalocephala:0.0038111300):1.0000:0.0050899500):1.0000:0.0012553500,(K11386_Buddleja_davidii:0.0012646700,(K37994_Buddleja_colvilei:0.0012581000,(IS712_Gomphostigma_virgatum:0.0025054300,IS715_Gomphostigma_virgatum:0.0051336700):1.0000:0.0128194300):1.0000:0.0012464300):0.9646:0.0000000700):1.0000:0.0062662100,((IS717_Leucophyllum_texanum:0.0047162300,(IS716_Capraria_biflora:0.0154518000,(IS699_Myoporum_sandwicense:0.0036943000,IS700_Myoporum_tetrandrum:0.0012126100):1.0000:0.0137579100):1.0000:0.0249217600):1.0000:0.0077011800,(IS706_Sutera_foetida:5.2301995200,((IS713_Aptosimum_arenarium:0.0058576100,(IS714_Peliostomum_virgatum_cf:0.0000030400,IS719_Hebenstretia_dentata:0.0298268500):1.0000:0.0145532400):0.8896:0.0008021400,(K28700_Buddleja_sp:3.8406759300,IS709_Emorya_suaveolens:4.0860450400):0.8542:5.2260883800):0.8542:0.0072154300):0.9370:0.0076486400):0.9370:0.0136553500):0.9370:0.0000000700):0.9370:0.0012577900):0.9370:0.0012608800):0.9370:0.0000000600):0.9370:0.0027506300):0.9370:0.0012406900):0.9370:0.0099388500):0.9370:0.0190932800):0.9370:0.0069587000):0.9646:0.0365419000):0.9646:0.0027168200);
+ 
+Note: this tree is unrooted. Branch lengths are the expected number of substitutions per site. Labels next to parentheses represent phylogenetic uncertainty due to model selection (see documentation)
+
+
+
+---------------------------------------------------------------
+*                                                             *
+*      DECISION THEORY PERFORMANCE-BASED SELECTION (DT)       *
+*                                                             *
+---------------------------------------------------------------
+ 
+ Sample size: 961.0
+ 
+ Model selected: 
+   Model = TPM1uf+G
+   partition = 012210
+   -lnL = 4137.7121
+   K = 92
+   freqA = 0.3460 
+   freqC = 0.1562 
+   freqG = 0.1835 
+   freqT = 0.3143 
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  1.5770
+   R(c) [AT] =  0.3616
+   R(d) [CG] =  0.3616
+   R(e) [CT] =  1.5770
+   R(f) [GT] =  1.0000
+   gamma shape = 0.6400 
+
+--
+PAUP* Commands Block:
+ If you want to load the selected model and associated estimates in PAUP*,
+ attach the next block of commands after the data in your PAUP file:
+
+[!
+Likelihood settings from best-fit model (TPM1uf+G) selected by DT
+with jModeltest 2.1.10 v20160303 on Wed Jul 12 05:09:11 PDT 2017]
+
+BEGIN PAUP;
+Lset base=(0.3460 0.1562 0.1835 ) nst=6  rmat=(1.0000 1.5770 0.3616 0.3616 1.5770) rates=gamma shape=0.6400 ncat=4 pinvar=0;
+END;
+--
+ 
+Tree for the best DT model = (IS702_Manulea_crassifolia:0.00481658,IS703_Manulea_glandulosa:0.00275634,(IS701_Manulea_pusilla:0.00764685,(IS707_Sutera_foetida:0.03475208,((IS718_Glumicalyx_lesuticus:0.00999403,(IS722_Zaluzianskya_violacea:0.04340251,IS721_Pseudoselago_sp:0.01920840):0.00102543):0.03895727,((IS704_Lyperia_antirrhinoides:0.00000001,IS705_Lyperia_antirrhinoides:0.00000001):0.03081621,((IS708_Jamesbrittenia_heucherifolia:0.02397383,(IS724_Verbascum_virgatum:0.01932387,IS720_Limosella_aquatica:0.06628036):0.00270380):0.00000007,(IS723_Scrophularia_arguta:0.01246950,((IS728_Phygelius_aff_capensis:0.00000008,(K12967_Phygelius_capensis:0.00000001,K33183_Phygelius_capensis:0.00000001):0.00122934):0.00862620,(K27324_Freylinia_undulata:0.00618101,((K27540_Teedia_lucida:0.00246051,(K27202_Oftia_africana:0.00000001,K5747_Oftia_africana:0.00123157):0.00000001):0.00869561,((IS710_Dermatobotrys_saundersii:0.00631885,((IS749_Camptoloma_rotundifolium_1:0.00121997,IS751_Camptoloma_rotundifolium_3:0.00123908):0.00246018,((IS203_Camptoloma_lyperiiflorum_5:0.00000001,IS204_Camptoloma_lyperiiflorum_1:0.00000001):0.00245895,(IS009_Camptoloma_canariensis_1:0.00000001,IS011_Camptoloma_canariensis_2:0.00000001):0.00122820):0.00000008):0.00369834):0.00000008,(((IS706_Sutera_foetida:5.23019952,((IS713_Aptosimum_arenarium:0.00585761,(IS714_Peliostomum_virgatum_cf:0.00000304,IS719_Hebenstretia_dentata:0.02982685):0.01455324):0.00080214,(K28700_Buddleja_sp:3.84067593,IS709_Emorya_suaveolens:4.08604504):5.22608838):0.00721543):0.00764864,(IS717_Leucophyllum_texanum:0.00471623,(IS716_Capraria_biflora:0.01545180,(IS699_Myoporum_sandwicense:0.00369430,IS700_Myoporum_tetrandrum:0.00121261):0.01375791):0.02492176):0.00770118):0.01365535,((IS725_Buddleja_salvifolia:0.00000009,(IS727_Buddleja_tucumanensis:0.00124138,K44467_Buddleja_megalocephala:0.00381113):0.00508995):0.00125535,(K11386_Buddleja_davidii:0.00126467,(K37994_Buddleja_colvilei:0.00125810,(IS712_Gomphostigma_virgatum:0.00250543,IS715_Gomphostigma_virgatum:0.00513367):0.01281943):0.00124643):0.00000007):0.00626621):0.00000007):0.00125779):0.00126088):0.00000006):0.00275063):0.00124069):0.00993885):0.01909328):0.00695870):0.03654190):0.00271682);
+ 
+ 
+* DT MODEL SELECTION : Selection uncertainty
+ 
+Model             -lnL    K       DT       delta       weight   cumWeight
+------------------------------------------------------------------------- 
+TPM1uf+G    4137.71210   92    1.512000   0.000000    0.071836   0.071836 
+TVMef+G     4210.54389   91    7.533969   6.021970    0.014417   0.086252 
+K80+G       4226.51369   88    7.673640   6.161641    0.014154   0.100407 
+SYM+G       4210.07771   92    7.734108   6.222108    0.014044   0.114450 
+TVM+G       4133.20981   94    8.027395   6.515395    0.013531   0.127981 
+JC+G        4261.53860   87    8.211206   6.699206    0.013228   0.141209 
+TIM1ef      4272.51906   89    8.339009   6.827009    0.013025   0.154234 
+TIM3+I      4159.99768   93    8.653136   7.141136    0.012552   0.166786 
+TPM3+G      4226.40139   89    8.654320   7.142320    0.012550   0.179336 
+TPM2+G      4226.46688   89    8.847489   7.335489    0.012276   0.191613 
+TrNef+G     4226.04000   89    8.847489   7.335489    0.012276   0.203889 
+TIM2ef+G    4225.98552   90    8.847504   7.335504    0.012276   0.216165 
+TPM2        4288.19707   88    8.853633   7.341633    0.012268   0.228433 
+TPM1+G      4210.92477   89    8.862071   7.350071    0.012256   0.240689 
+TVMef       4272.86136   90    8.876159   7.364159    0.012237   0.252926 
+TPM1        4273.16803   88    8.876173   7.364173    0.012237   0.265163 
+TIM2ef      4287.52814   89    8.876189   7.364189    0.012237   0.277400 
+TrNef       4287.61528   88    8.876206   7.364206    0.012237   0.289636 
+TPM2+I+G    4226.24737   90    8.884464   7.372464    0.012225   0.301862 
+TIM3ef+I    4232.81357   90    8.885173   7.373174    0.012224   0.314086 
+TPM3        4286.95757   88    8.887890   7.375890    0.012221   0.326307 
+TPM2+I      4233.59164   89    8.892831   7.380832    0.012214   0.338520 
+TrNef+I     4233.04503   89    8.892857   7.380858    0.012214   0.350734 
+TIM2ef+I    4232.98425   90    8.892867   7.380868    0.012214   0.362948 
+TPM1+I      4218.28168   89    8.894859   7.382860    0.012211   0.375159 
+TPM2uf+I    4165.39173   92    8.896310   7.384310    0.012209   0.387368 
+TIM2+I      4165.38595   93    8.896311   7.384311    0.012209   0.399577 
+K80         4288.28161   87    8.897087   7.385087    0.012208   0.411785 
+TrNef+I+G   4225.82768   90    8.900168   7.388169    0.012204   0.423989 
+TIM2        4211.74310   92    8.944328   7.432328    0.012143   0.436132 
+TPM2uf      4211.74338   91    8.944329   7.432329    0.012143   0.448276 
+F81         4257.57983   89    8.944396   7.432396    0.012143   0.460419 
+TIM1ef+I    4217.70045   90    9.073228   7.561228    0.011971   0.472390 
+GTR+I       4140.90324   95    9.142545   7.630546    0.011880   0.484270 
+JC+I        4268.56178   87    9.281100   7.769101    0.011703   0.495973 
+TPM3+I      4233.44129   89    9.446158   7.934159    0.011498   0.507472 
+SYM+I       4217.31895   92    9.492101   7.980101    0.011443   0.518914 
+GTR+G       4133.19963   95    9.568384   8.056384    0.011351   0.530266 
+TIM2+G      4158.03840   93    9.568488   8.056488    0.011351   0.541617 
+TIM1ef+G    4210.46967   90    9.623702   8.111703    0.011286   0.552903 
+K80+I       4233.64318   88    9.667577   8.155577    0.011235   0.564138 
+TPM2uf+G    4158.04351   92    9.688905   8.176906    0.011210   0.575349 
+JC          4322.42740   86    9.699669   8.187669    0.011198   0.586547 
+TVM+I       4140.90322   94    9.842151   8.330151    0.011036   0.597582 
+TVMef+I     4217.92178   91    9.860392   8.348393    0.011015   0.608598 
+F81+I       4208.22616   90    9.912029   8.400029    0.010958   0.619556 
+TPM1uf+I    4145.10898   92    9.962279   8.450279    0.010903   0.630458 
+TIM3ef+I+G  4225.70428   91   10.321604   8.809604    0.010523   0.640981 
+TIM3ef+G    4225.90935   90   10.374656   8.862657    0.010469   0.651451 
+SYM         4272.21472   91   10.394498   8.882498    0.010449   0.661900 
+TIM2+I+G    4157.90177   94   10.477601   8.965602    0.010366   0.672266 
+TIM3+I+G    4152.89029   94   10.512260   9.000260    0.010332   0.682599 
+JC+I+G      4261.33556   88   10.522552   9.010553    0.010322   0.692921 
+TIM3        4203.99061   92   10.574625   9.062625    0.010271   0.703192 
+TIM1+G      4137.71131   93   10.647343   9.135343    0.010201   0.713393 
+F81+G       4201.60070   90   10.656003   9.144004    0.010193   0.723586 
+GTR         4184.57960   94   10.675047   9.163047    0.010175   0.733761 
+TPM3uf+I    4159.86975   92   10.709075   9.197075    0.010142   0.743903 
+TIM3+G      4153.00209   93   10.811601   9.299601    0.010046   0.753949 
+TPM3uf+G    4153.03686   92   11.205875   9.693875    0.009693   0.763642 
+TPM2uf+I+G  4157.90631   93   11.240973   9.728973    0.009662   0.773305 
+TIM1        4190.30885   92   11.263621   9.751622    0.009643   0.782948 
+GTR+I+G     4133.09591   96   11.305991   9.793991    0.009607   0.792554 
+TIM1+I+G    4137.59794   94   11.331818   9.819818    0.009585   0.802139 
+K80+I+G     4226.29508   89   11.404320   9.892320    0.009524   0.811664 
+TIM2ef+I+G  4225.77191   91   11.409298   9.897299    0.009520   0.821183 
+F81+I+G     4201.44173   91   11.544714  10.032715    0.009408   0.830592 
+TIM1+I      4145.10860   93   11.758864  10.246864    0.009237   0.839829 
+TPM1uf      4190.31086   91   11.907906  10.395906    0.009121   0.848950 
+TVMef+I+G   4210.31357   92   12.091888  10.579888    0.008982   0.857932 
+TPM3uf+I+G  4152.92642   93   12.191760  10.679760    0.008909   0.866841 
+TPM1+I+G    4210.69925   90   12.198592  10.686592    0.008904   0.875745 
+TVM         4184.58569   93   12.266790  10.754790    0.008854   0.884600 
+TIM3ef      4286.29240   89   12.364054  10.852054    0.008785   0.893384 
+TrN         4215.19103   91   12.401808  10.889808    0.008758   0.902142 
+TPM1uf+I+G  4137.59899   93   12.592735  11.080735    0.008625   0.910768 
+TPM3+I+G    4226.19143   90   12.633204  11.121204    0.008598   0.919365 
+HKY+I       4168.01037   91   12.789969  11.277969    0.008492   0.927858 
+SYM+I+G     4209.85412   93   12.978002  11.466002    0.008369   0.936227 
+TPM3uf      4203.99855   91   13.481242  11.969243    0.008057   0.944283 
+TrN+I       4168.00980   92   13.742162  12.230163    0.007904   0.952187 
+HKY         4215.19156   90   13.801681  12.289681    0.007870   0.960057 
+TrN+G       4161.17745   92   14.063407  12.551408    0.007723   0.967780 
+TIM1ef+I+G  4210.25104   91   14.544619  13.032620    0.007468   0.975248 
+TVM+I+G     4133.10736   95   15.015982  13.503982    0.007233   0.982481 
+HKY+I+G     4161.03509   92   17.270783  15.758783    0.006289   0.988770 
+HKY+G       4161.17809   91   17.758067  16.246067    0.006116   0.994887 
+TrN+I+G     4161.03416   93   21.241672  19.729672    0.005113   1.000000
+-------------------------------------------------------------------------
+-lnL:t	negative log likelihod
+K:	number of estimated parameters
+DT:	decision theory performance-based score
+delta:	DT difference
+weight:	DT weight* (calculated using 1/DT)
+cumWeight:	cumulative DT weight
+ 
+ 
+* DT MODEL SELECTION : Confidence interval
+ 
+There are 88 models in the 100% confidence interval: [ TPM1uf+G TVMef+G K80+G SYM+G TVM+G JC+G TIM1ef TIM3+I TPM3+G TPM2+G TrNef+G TIM2ef+G TPM2 TPM1+G TVMef TPM1 TIM2ef TrNef TPM2+I+G TIM3ef+I TPM3 TPM2+I TrNef+I TIM2ef+I TPM1+I TPM2uf+I TIM2+I K80 TrNef+I+G TIM2 TPM2uf F81 TIM1ef+I GTR+I JC+I TPM3+I SYM+I GTR+G TIM2+G TIM1ef+G K80+I TPM2uf+G JC TVM+I TVMef+I F81+I TPM1uf+I TIM3ef+I+G TIM3ef+G SYM TIM2+I+G TIM3+I+G JC+I+G TIM3 TIM1+G F81+G GTR TPM3uf+I TIM3+G TPM3uf+G TPM2uf+I+G TIM1 GTR+I+G TIM1+I+G K80+I+G TIM2ef+I+G F81+I+G TIM1+I TPM1uf TVMef+I+G TPM3uf+I+G TPM1+I+G TVM TIM3ef TrN TPM1uf+I+G TPM3+I+G HKY+I SYM+I+G TPM3uf TrN+I HKY TrN+G TIM1ef+I+G TVM+I+G HKY+I+G HKY+G TrN+I+G ] 
+ 
+ 
+* DT MODEL SELECTION : Parameter importance
+ 
+Parameter   Importance
+----------------------
+fA	    0.4951
+fC	    0.4951
+fG	    0.4951
+fT	    0.4951
+kappa	    0.0759
+titv	    0.0759
+rAC	    0.5280
+rAG	    0.8350
+rAT	    0.5897
+rCG	    0.5700
+rCT	    0.8350
+rGT	    0.8350
+pinv(I)	    0.2475
+alpha(G)	    0.3125
+pinv(IG)	    0.2018
+alpha(IG)	    0.2018
+----------------------
+Values have been rounded.
+ (I):  considers only +I models.
+ (G):  considers only +G models.
+ (IG): considers only +I+G models.
+ 
+ 
+* DT MODEL SELECTION : Best Model's command line
+ 
+phyml  -i /tmp/jmodeltest5580669905982529847.phy -d nt -n 1 -b 0 --run_id TPM1uf+G -m 012210 -f m -c 4 -a e --no_memory_check -o tlr -s BEST
+ 
+ 
+ 
+---------------------------------------------------------------
+*                                                             *
+*                    MODEL AVERAGED PHYLOGENY                 *
+*                                                             *
+---------------------------------------------------------------
+ 
+Selection criterion: . . . . DT
+Confidence interval: . . . . 1.00
+Consensus type:. . . . . . . 50% majority rule
+ 
+ 
+Using 88 models in the 1.00 confidence interval = TPM1uf+G TVMef+G K80+G SYM+G TVM+G JC+G TIM1ef TIM3+I TPM3+G TPM2+G TrNef+G TIM2ef+G TPM2 TPM1+G TVMef TPM1 TIM2ef TrNef TPM2+I+G TIM3ef+I TPM3 TPM2+I TrNef+I TIM2ef+I TPM1+I TPM2uf+I TIM2+I K80 TrNef+I+G TIM2 TPM2uf F81 TIM1ef+I GTR+I JC+I TPM3+I SYM+I GTR+G TIM2+G TIM1ef+G K80+I TPM2uf+G JC TVM+I TVMef+I F81+I TPM1uf+I TIM3ef+I+G TIM3ef+G SYM TIM2+I+G TIM3+I+G JC+I+G TIM3 TIM1+G F81+G GTR TPM3uf+I TIM3+G TPM3uf+G TPM2uf+I+G TIM1 GTR+I+G TIM1+I+G K80+I+G TIM2ef+I+G F81+I+G TIM1+I TPM1uf TVMef+I+G TPM3uf+I+G TPM1+I+G TVM TIM3ef TrN TPM1uf+I+G TPM3+I+G HKY+I SYM+I+G TPM3uf TrN+I HKY TrN+G TIM1ef+I+G TVM+I+G HKY+I+G HKY+G TrN+I+G  
+ 
+Species in order:
+ 
+    1. IS702_Manulea_crassifolia
+    2. IS703_Manulea_glandulosa
+    3. IS701_Manulea_pusilla
+    4. IS707_Sutera_foetida
+    5. IS718_Glumicalyx_lesuticus
+    6. IS722_Zaluzianskya_violacea
+    7. IS721_Pseudoselago_sp
+    8. IS704_Lyperia_antirrhinoides
+    9. IS705_Lyperia_antirrhinoides
+    10. IS708_Jamesbrittenia_heucherifolia
+    11. IS724_Verbascum_virgatum
+    12. IS720_Limosella_aquatica
+    13. IS723_Scrophularia_arguta
+    14. IS728_Phygelius_aff_capensis
+    15. K12967_Phygelius_capensis
+    16. K33183_Phygelius_capensis
+    17. K27324_Freylinia_undulata
+    18. K27540_Teedia_lucida
+    19. K27202_Oftia_africana
+    20. K5747_Oftia_africana
+    21. IS710_Dermatobotrys_saundersii
+    22. IS749_Camptoloma_rotundifolium_1
+    23. IS751_Camptoloma_rotundifolium_3
+    24. IS203_Camptoloma_lyperiiflorum_5
+    25. IS204_Camptoloma_lyperiiflorum_1
+    26. IS009_Camptoloma_canariensis_1
+    27. IS011_Camptoloma_canariensis_2
+    28. IS706_Sutera_foetida
+    29. IS713_Aptosimum_arenarium
+    30. IS714_Peliostomum_virgatum_cf
+    31. IS719_Hebenstretia_dentata
+    32. K28700_Buddleja_sp
+    33. IS709_Emorya_suaveolens
+    34. IS717_Leucophyllum_texanum
+    35. IS716_Capraria_biflora
+    36. IS699_Myoporum_sandwicense
+    37. IS700_Myoporum_tetrandrum
+    38. IS725_Buddleja_salvifolia
+    39. IS727_Buddleja_tucumanensis
+    40. K44467_Buddleja_megalocephala
+    41. K11386_Buddleja_davidii
+    42. K37994_Buddleja_colvilei
+    43. IS712_Gomphostigma_virgatum
+    44. IS715_Gomphostigma_virgatum
+ 
+Bipartitions included in the consensus tree
+ 
+    12345678911111111112222222222333333333344444
+             01234567890123456789012345678901234
+    ******************************************** ( 1.0 )
+    --****************************************** ( 0.58742 )
+    ---***************************************** ( 0.58113 )
+    ----**************************************** ( 0.54675 )
+    ----***------------------------------------- ( 0.66503 )
+    -------**----------------------------------- ( 1.0 )
+    ---------***-------------------------------- ( 0.62837 )
+    ----------**-------------------------------- ( 1.0 )
+    -------------***---------------------------- ( 1.0 )
+    --------------**---------------------------- ( 1.0 )
+    -----------------***------------------------ ( 1.0 )
+    ------------------**------------------------ ( 0.82361 )
+    --------------------*******----------------- ( 0.61755 )
+    ---------------------******----------------- ( 1.0 )
+    ---------------------**--------------------- ( 1.0 )
+    -----------------------****----------------- ( 0.83499 )
+    -----------------------**------------------- ( 1.0 )
+    -------------------------**----------------- ( 1.0 )
+    ----------------------------***------------- ( 0.52364 )
+    -----------------------------**------------- ( 0.9921 )
+    ---------------------------------****------- ( 0.968 )
+    ----------------------------------***------- ( 0.97649 )
+    -----------------------------------**------- ( 0.97649 )
+    -------------------------------------******* ( 1.0 )
+    -------------------------------------***---- ( 1.0 )
+    --------------------------------------**---- ( 1.0 )
+    ----------------------------------------**** ( 0.65066 )
+    -----------------------------------------*** ( 1.0 )
+    ------------------------------------------** ( 1.0 )
+
+ 
+               +-44 IS719_Hebenstretia_dentata
+            +-68
+            |  +-43 IS714_Peliostomum_virgatum_cf
+         +-69
+         |  +-42 IS713_Aptosimum_arenarium
+         |
+         |           +-41 IS011_Camptoloma_canariensis_2
+         |        +-64
+         |        |  +-40 IS009_Camptoloma_canariensis_1
+         |     +-65
+         |     |  |  +-39 IS204_Camptoloma_lyperiiflorum_1
+         |     |  +-63
+         |     |     +-38 IS203_Camptoloma_lyperiiflorum_5
+         |  +-66
+         |  |  |  +-37 IS751_Camptoloma_rotundifolium_3
+         |  |  +-62
+         |  |     +-36 IS749_Camptoloma_rotundifolium_1
+         +-67
+         |  +-35 IS710_Dermatobotrys_saundersii
+         |
+         |     +-34 IS720_Limosella_aquatica
+         |  +-60
+         |  |  +-33 IS724_Verbascum_virgatum
+         +-61
+         |  +-32 IS708_Jamesbrittenia_heucherifolia
+         |
+         |  +-31 IS721_Pseudoselago_sp
+         |  |
+         |  +-30 IS722_Zaluzianskya_violacea
+         +-59
+         |  +-29 IS718_Glumicalyx_lesuticus
+         |
+         |        +-28 IS700_Myoporum_tetrandrum
+         |     +-56
+         |     |  +-27 IS699_Myoporum_sandwicense
+         |  +-57
+         |  |  +-26 IS716_Capraria_biflora
+         +-58
+         |  +-25 IS717_Leucophyllum_texanum
+         |
+         |           +-24 IS715_Gomphostigma_virgatum
+         |        +-52
+         |        |  +-23 IS712_Gomphostigma_virgatum
+         |     +-53
+         |     |  +-22 K37994_Buddleja_colvilei
+         |  +-54
+         |  |  +-21 K11386_Buddleja_davidii
+         +-55
+         |  |     +-20 K44467_Buddleja_megalocephala
+         |  |  +-50
+         |  |  |  +-19 IS727_Buddleja_tucumanensis
+         |  +-51
+         |     +-18 IS725_Buddleja_salvifolia
+         |
+         |     +-17 K5747_Oftia_africana
+         |  +-48
+         |  |  +-16 K27202_Oftia_africana
+         +-49
+         |  +-15 K27540_Teedia_lucida
+      +-70
+      |  |     +-14 K33183_Phygelius_capensis
+      |  |  +-46
+      |  |  |  +-13 K12967_Phygelius_capensis
+      |  +-47
+      |  |  +-12 IS728_Phygelius_aff_capensis
+      |  |
+      |  |  +-11 IS705_Lyperia_antirrhinoides
+      |  +-45
+      |  |  +-10 IS704_Lyperia_antirrhinoides
+      |  |
+      |  +----------------------9 IS709_Emorya_suaveolens
+      |  |
+      |  +----------------------8 K28700_Buddleja_sp
+      |  |
+      |  +----------------------7 IS706_Sutera_foetida
+      |  |
+      |  +--6 K27324_Freylinia_undulata
+      |  |
+      |  +--5 IS723_Scrophularia_arguta
+   +-71
+   |  +--4 IS707_Sutera_foetida
++-72
+|  +--3 IS701_Manulea_pusilla
+|
++--2 IS703_Manulea_glandulosa
+|
++--1 IS702_Manulea_crassifolia
+
+ 
+(IS702_Manulea_crassifolia:0.0048349800,IS703_Manulea_glandulosa:0.0026103900,(IS701_Manulea_pusilla:0.0073534700,(IS707_Sutera_foetida:0.0336784400,(IS723_Scrophularia_arguta:0.0124818000,K27324_Freylinia_undulata:0.0061688600,IS706_Sutera_foetida:3.2051356500,K28700_Buddleja_sp:3.2002073200,IS709_Emorya_suaveolens:3.2800105300,(IS704_Lyperia_antirrhinoides:0.0000000100,IS705_Lyperia_antirrhinoides:0.0000000100):1.0000:0.0303377500,(IS728_Phygelius_aff_capensis:0.0000000800,(K12967_Phygelius_capensis:0.0000000100,K33183_Phygelius_capensis:0.0000000100):1.0000:0.0012293400):1.0000:0.0086262000,(K27540_Teedia_lucida:0.0024605100,(K27202_Oftia_africana:0.0000000100,K5747_Oftia_africana:0.0012315700):0.8236:0.0000000100):1.0000:0.0086956100,((IS725_Buddleja_salvifolia:0.0000000900,(IS727_Buddleja_tucumanensis:0.0012437800,K44467_Buddleja_megalocephala:0.0037922000):1.0000:0.0050715800):1.0000:0.0012502700,(K11386_Buddleja_davidii:0.0012601700,(K37994_Buddleja_colvilei:0.0012508300,(IS712_Gomphostigma_virgatum:0.0024945300,IS715_Gomphostigma_virgatum:0.0051206500):1.0000:0.0127561000):1.0000:0.0012459600):0.6507:0.0000000700):1.0000:0.0062416000,(IS717_Leucophyllum_texanum:0.0052278800,(IS716_Capraria_biflora:0.0156820000,(IS699_Myoporum_sandwicense:0.0036943000,IS700_Myoporum_tetrandrum:0.0012094800):0.9765:0.0135021100):0.9765:0.0246530800):0.9680:0.0076620800,(IS718_Glumicalyx_lesuticus:0.0099940300,IS722_Zaluzianskya_violacea:0.0427127500,IS721_Pseudoselago_sp:0.0192642300):0.6650:0.0365297400,(IS708_Jamesbrittenia_heucherifolia:0.0239568100,(IS724_Verbascum_virgatum:0.0190220200,IS720_Limosella_aquatica:0.0659627000):1.0000:0.0029052600):0.6284:0.0000000700,(IS710_Dermatobotrys_saundersii:0.0062863100,((IS749_Camptoloma_rotundifolium_1:0.0012201100,IS751_Camptoloma_rotundifolium_3:0.0012360100):1.0000:0.0024601800,((IS203_Camptoloma_lyperiiflorum_5:0.0000000100,IS204_Camptoloma_lyperiiflorum_1:0.0000000100):1.0000:0.0024589500,(IS009_Camptoloma_canariensis_1:0.0000000100,IS011_Camptoloma_canariensis_2:0.0000000100):1.0000:0.0012282000):0.8350:0.0000000800):1.0000:0.0036983400):0.6175:0.0000000800,(IS713_Aptosimum_arenarium:0.0058576100,(IS714_Peliostomum_virgatum_cf:0.0000030400,IS719_Hebenstretia_dentata:0.0295639100):0.9921:0.0138839900):0.5236:0.0154720000):0.5467:0.0070949200):0.5811:0.0365419000):0.5874:0.0029534200);
+ 
+Note: this tree is unrooted. Branch lengths are the expected number of substitutions per site. Labels next to parentheses represent phylogenetic uncertainty due to model selection (see documentation)
+ 
+ 
+ 
+---------------------------------------------------------------
+*                                                             *
+*                    SELECTION SUMMARY                        *
+*                                                             *
+---------------------------------------------------------------
+
+::Optimized Topologies Summary::
+
+There are 35 different topologies.
+
+Topology Id: 1
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	  1	 47.85%		  0	3.07e+00	9.40e+00
+BIC	  2	  8.02%		  6	1.02e+01	2.16e+00
+AICc	  1	 51.66%		  0	3.07e+00	9.40e+00
+DT	  2	  2.32%		  6	1.02e+01	2.16e+00
+Models supporting:   2
+                     TPM3uf+G TVM+G 
+
+Topology Id: 2
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	  2	 17.78%		  4	6.11e+00	2.74e-04
+BIC	  3	  0.26%		  6	1.05e+01	4.22e-01
+AICc	  2	 15.23%		  4	6.11e+00	2.74e-04
+DT	  3	  3.27%		  6	1.05e+01	4.22e-01
+Models supporting:   3
+                     TIM2+G TIM3+G GTR+G 
+
+Topology Id: 3
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	  3	  0.00%		  6	6.99e+00	9.45e+00
+BIC	  4	  0.00%		  8	9.01e+00	3.07e+00
+AICc	  3	  0.00%		  6	6.99e+00	9.45e+00
+DT	  4	 11.29%		  8	9.01e+00	3.07e+00
+Models supporting:   9
+                     JC+G K80+G TrNef+G TrN+G TPM2+G TPM3+G TIM2ef+G TVMef+G SYM+G 
+
+Topology Id: 4
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	  4	  3.92%		  6	8.72e+00	0.00e+00
+BIC	  1	 85.42%		  0	0.00e+00	0.00e+00
+AICc	  4	  6.67%		  6	8.72e+00	0.00e+00
+DT	  1	  7.18%		  0	0.00e+00	0.00e+00
+Models supporting:   1
+                     TPM1uf+G 
+
+Topology Id: 5
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	  5	  0.00%		  8	1.16e+01	0.00e+00
+BIC	  6	  0.00%		 10	1.25e+01	0.00e+00
+AICc	  5	  0.00%		  8	1.16e+01	0.00e+00
+DT	  6	  0.88%		 10	1.25e+01	0.00e+00
+Models supporting:   1
+                     TrN 
+
+Topology Id: 6
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	  6	  0.00%		 10	5.67e+00	1.48e+00
+BIC	  8	  0.00%		 12	9.78e+00	1.69e+00
+AICc	  6	  0.00%		 10	5.67e+00	1.48e+00
+DT	  8	 10.57%		 12	9.78e+00	1.69e+00
+Models supporting:   9
+                     TrNef TPM1 TPM2 TPM3 TIM1ef TIM2ef TIM3ef TVMef SYM 
+
+Topology Id: 7
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	  7	  0.00%		 12	4.77e+00	3.84e+00
+BIC	  5	  0.00%		 10	9.75e+00	7.76e-02
+AICc	  7	  0.00%		 12	4.77e+00	3.84e+00
+DT	  5	  2.34%		 10	9.75e+00	7.76e-02
+Models supporting:   2
+                     JC K80 
+
+Topology Id: 8
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	  8	  0.00%		 12	5.42e+00	0.00e+00
+BIC	  7	  0.00%		 10	9.25e+00	0.00e+00
+AICc	  8	  0.00%		 12	5.42e+00	0.00e+00
+DT	  7	  1.23%		 10	9.25e+00	0.00e+00
+Models supporting:   1
+                     TPM1+G 
+
+Topology Id: 9
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	  9	  1.44%		 26	8.73e+00	1.36e+01
+BIC	  9	  2.76%		 28	1.37e+01	1.08e+01
+AICc	  9	  1.96%		 26	8.73e+00	1.36e+01
+DT	  9	  2.65%		 28	1.37e+01	1.08e+01
+Models supporting:   3
+                     F81+G HKY+G TIM1+G 
+
+Topology Id: 10
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	 10	  0.00%		 28	9.59e+00	0.00e+00
+BIC	 12	  0.00%		 30	1.45e+01	0.00e+00
+AICc	 10	  0.00%		 28	9.59e+00	0.00e+00
+DT	 12	  0.79%		 30	1.45e+01	0.00e+00
+Models supporting:   1
+                     HKY 
+
+Topology Id: 11
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	 11	  0.00%		 28	6.73e+00	0.00e+00
+BIC	 10	  0.00%		 28	1.00e+01	0.00e+00
+AICc	 11	  0.00%		 28	6.73e+00	0.00e+00
+DT	 10	  1.12%		 28	1.00e+01	0.00e+00
+Models supporting:   1
+                     TPM2uf+G 
+
+Topology Id: 12
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	 12	  0.00%		 32	1.01e+01	1.41e+01
+BIC	 11	  0.00%		 30	1.27e+01	1.02e+01
+AICc	 12	  0.00%		 32	1.01e+01	1.41e+01
+DT	 11	  9.20%		 30	1.27e+01	1.02e+01
+Models supporting:   10
+                     JC+I+G F81+I+G K80+I+G TrN+I+G TPM1+I+G TPM2+I+G TIM1ef+I+G TIM2ef+I+G TIM3ef+I+G 
+                     TVMef+I+G 
+
+Topology Id: 13
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	 13	  0.00%		 32	5.61e+00	2.71e-10
+BIC	 13	  0.00%		 34	9.32e+00	1.28e-09
+AICc	 13	  0.00%		 32	5.61e+00	2.71e-10
+DT	 13	  3.64%		 34	9.32e+00	1.28e-09
+Models supporting:   3
+                     F81 TPM2uf TIM2 
+
+Topology Id: 14
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	 14	  0.00%		 32	8.90e+00	4.47e-01
+BIC	 15	  0.00%		 34	1.19e+01	3.82e-01
+AICc	 14	  0.00%		 32	8.90e+00	4.47e-01
+DT	 15	  3.78%		 34	1.19e+01	3.82e-01
+Models supporting:   4
+                     TPM1uf TIM1 TVM GTR 
+
+Topology Id: 15
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	 15	  0.00%		 34	9.39e+00	3.40e+00
+BIC	 16	  0.00%		 36	1.24e+01	1.96e+00
+AICc	 15	  0.00%		 34	9.39e+00	3.40e+00
+DT	 16	  1.83%		 36	1.24e+01	1.96e+00
+Models supporting:   2
+                     TPM3uf TIM3 
+
+Topology Id: 16
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	 16	  0.00%		 38	8.26e+00	7.34e+00
+BIC	 14	  0.00%		 34	1.13e+01	3.95e+00
+AICc	 16	  0.00%		 38	8.26e+00	7.34e+00
+DT	 14	  2.06%		 34	1.13e+01	3.95e+00
+Models supporting:   2
+                     TrNef+I+G SYM+I+G 
+
+Topology Id: 17
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	 17	  0.00%		 38	6.19e+00	0.00e+00
+BIC	 24	  0.00%		 38	1.01e+01	0.00e+00
+AICc	 17	  0.00%		 38	6.19e+00	0.00e+00
+DT	 24	  1.13%		 38	1.01e+01	0.00e+00
+Models supporting:   1
+                     TIM1ef+G 
+
+Topology Id: 18
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	 18	  0.00%		 38	7.75e+00	0.00e+00
+BIC	 17	  0.00%		 36	1.07e+01	0.00e+00
+AICc	 18	  0.00%		 38	7.75e+00	0.00e+00
+DT	 17	  1.05%		 36	1.07e+01	0.00e+00
+Models supporting:   1
+                     TIM3ef+G 
+
+Topology Id: 19
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	 19	  0.00%		 40	5.67e+00	7.25e-02
+BIC	 18	  0.00%		 38	9.35e+00	2.58e-02
+AICc	 19	  0.00%		 40	5.67e+00	7.25e-02
+DT	 18	  6.06%		 38	9.35e+00	2.58e-02
+Models supporting:   5
+                     JC+I TrNef+I TPM2+I TIM2ef+I TIM3ef+I 
+
+Topology Id: 20
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	 20	  0.00%		 40	6.67e+00	0.00e+00
+BIC	 19	  0.00%		 38	1.03e+01	0.00e+00
+AICc	 20	  0.00%		 40	6.67e+00	0.00e+00
+DT	 19	  1.10%		 38	1.03e+01	0.00e+00
+Models supporting:   1
+                     F81+I 
+
+Topology Id: 21
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	 21	  0.00%		 40	6.62e+00	2.47e-02
+BIC	 20	  0.00%		 38	9.94e+00	1.10e-02
+AICc	 21	  0.00%		 40	6.62e+00	2.47e-02
+DT	 20	  2.27%		 38	9.94e+00	1.10e-02
+Models supporting:   2
+                     K80+I TPM3+I 
+
+Topology Id: 22
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	 22	  0.00%		 40	5.55e+00	0.00e+00
+BIC	 21	  0.00%		 38	9.27e+00	0.00e+00
+AICc	 22	  0.00%		 40	5.55e+00	0.00e+00
+DT	 21	  1.22%		 38	9.27e+00	0.00e+00
+Models supporting:   1
+                     TPM1+I 
+
+Topology Id: 23
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	 23	  0.00%		 40	1.06e+01	0.00e+00
+BIC	 22	  0.00%		 38	1.29e+01	0.00e+00
+AICc	 23	  0.00%		 40	1.06e+01	0.00e+00
+DT	 22	  0.86%		 38	1.29e+01	0.00e+00
+Models supporting:   1
+                     TPM3+I+G 
+
+Topology Id: 24
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	 24	  0.00%		 40	6.47e+00	2.28e-01
+BIC	 23	  0.00%		 38	9.87e+00	9.79e-02
+AICc	 24	  0.00%		 40	6.47e+00	2.28e-01
+DT	 23	  3.44%		 38	9.87e+00	9.79e-02
+Models supporting:   3
+                     TIM1ef+I TVMef+I SYM+I 
+
+Topology Id: 25
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	 25	  0.00%		 42	1.08e+01	0.00e+00
+BIC	 25	  0.00%		 40	1.31e+01	0.00e+00
+AICc	 25	  0.00%		 42	1.08e+01	0.00e+00
+DT	 25	  0.85%		 40	1.31e+01	0.00e+00
+Models supporting:   1
+                     HKY+I 
+
+Topology Id: 26
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	 26	  0.00%		 42	1.59e+01	0.00e+00
+BIC	 26	  0.00%		 40	1.76e+01	0.00e+00
+AICc	 26	  0.00%		 42	1.59e+01	0.00e+00
+DT	 26	  0.63%		 40	1.76e+01	0.00e+00
+Models supporting:   1
+                     HKY+I+G 
+
+Topology Id: 27
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	 27	  0.00%		 42	7.24e+00	0.00e+00
+BIC	 27	  0.05%		 40	1.04e+01	0.00e+00
+AICc	 27	  0.00%		 42	7.24e+00	0.00e+00
+DT	 27	  1.09%		 40	1.04e+01	0.00e+00
+Models supporting:   1
+                     TPM1uf+I 
+
+Topology Id: 28
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	 28	  1.61%		 42	1.07e+01	6.94e-02
+BIC	 28	  3.09%		 40	1.30e+01	4.68e-02
+AICc	 28	  2.19%		 42	1.07e+01	6.94e-02
+DT	 28	  1.75%		 40	1.30e+01	4.68e-02
+Models supporting:   2
+                     TPM1uf+I+G TPM3uf+I+G 
+
+Topology Id: 29
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	 29	  0.00%		 42	5.55e+00	0.00e+00
+BIC	 29	  0.00%		 40	9.27e+00	1.42e-13
+AICc	 29	  0.00%		 42	5.55e+00	0.00e+00
+DT	 29	  2.44%		 40	9.27e+00	1.42e-13
+Models supporting:   2
+                     TPM2uf+I TIM2+I 
+
+Topology Id: 30
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	 30	  0.00%		 42	8.22e+00	0.00e+00
+BIC	 30	  0.00%		 40	1.11e+01	0.00e+00
+AICc	 30	  0.00%		 42	8.22e+00	0.00e+00
+DT	 30	  1.01%		 40	1.11e+01	0.00e+00
+Models supporting:   1
+                     TPM3uf+I 
+
+Topology Id: 31
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	 31	  0.00%		 42	9.57e+00	0.00e+00
+BIC	 31	  0.00%		 40	1.21e+01	0.00e+00
+AICc	 31	  0.00%		 42	9.57e+00	0.00e+00
+DT	 31	  0.92%		 40	1.21e+01	0.00e+00
+Models supporting:   1
+                     TIM1+I 
+
+Topology Id: 32
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	 32	  0.00%		 42	5.69e+00	0.00e+00
+BIC	 32	  0.00%		 40	8.85e+00	0.00e+00
+AICc	 32	  0.00%		 42	5.69e+00	0.00e+00
+DT	 32	  1.26%		 40	8.85e+00	0.00e+00
+Models supporting:   1
+                     TIM3+I 
+
+Topology Id: 33
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	 33	  0.03%		 42	6.47e+00	2.88e-01
+BIC	 33	  0.00%		 40	9.85e+00	1.24e-01
+AICc	 33	  0.03%		 42	6.47e+00	2.88e-01
+DT	 33	  2.29%		 40	9.85e+00	1.24e-01
+Models supporting:   2
+                     TVM+I GTR+I 
+
+Topology Id: 34
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	 34	  0.00%		 44	1.19e+01	0.00e+00
+BIC	 35	  0.00%		 44	1.40e+01	0.00e+00
+AICc	 34	  0.00%		 44	1.19e+01	0.00e+00
+DT	 35	  0.79%		 44	1.40e+01	0.00e+00
+Models supporting:   1
+                     TrN+I 
+
+Topology Id: 35
+	Rank	Weight		 RF	AvgEucl		VarEucl
+AIC	 35	 27.35%		 44	9.48e+00	3.51e+00
+BIC	 34	  0.40%		 42	1.21e+01	2.37e+00
+AICc	 35	 22.26%		 44	9.48e+00	3.51e+00
+DT	 34	  5.68%		 42	1.21e+01	2.37e+00
+Models supporting:   6
+                     TPM2uf+I+G TIM1+I+G TIM2+I+G TIM3+I+G TVM+I+G GTR+I+G 
+
+ 
+ 
+ 
+::Best Models::
+ 
+	Model 		f(a) 	f(c) 	f(g) 	f(t) 	kappa 	titv 	Ra	Rb	Rc	Rd	Re	Rf	pInv 	gamma
+----------------------------------------------------------------------------------------------------------------------------------------
+AIC 	TVM+G		0.35	0.15	0.18	0.32	0.00	0.00	  1.211   1.740   0.307   0.709   1.740   1.000 N/A	   0.66
+BIC 	TPM1uf+G	0.35	0.16	0.18	0.31	0.00	0.00	  1.000   1.577   0.362   0.362   1.577   1.000 N/A	   0.64
+AICc 	TVM+G		0.35	0.15	0.18	0.32	0.00	0.00	  1.211   1.740   0.307   0.709   1.740   1.000 N/A	   0.66
+DT 	TPM1uf+G	0.35	0.16	0.18	0.31	0.00	0.00	  1.000   1.577   0.362   0.362   1.577   1.000 N/A	   0.64
+ 
+Program is done.
