@@ -2,11 +2,7 @@
  
 Title: Rare and widespread: Integrating Bayesian MCMC approaches, Sanger sequencing and Hyb-Seq phylogenomics to reconstruct the origin of the enigmatic Rand Flora genus Camptoloma
 
-V Culshaw (vickycul@hotmail.com)
-Tamara Villaverde
-M Mairal
-S Olsson
-I Sanmartin
+V Culshaw (vickycul@hotmail.com), T Villaverde , M Mairal, S Olsson, I Sanmartin
 
 American Journal of Botany
  
